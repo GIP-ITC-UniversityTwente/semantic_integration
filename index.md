@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title:  "Publication plan"
 subtitle: "Overview of papers planned 2018-2019"
 ---
