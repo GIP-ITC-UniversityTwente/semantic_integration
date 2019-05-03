@@ -1,9 +1,3 @@
----
-title:  "Publication plan"
-subtitle: "Overview of papers planned 2018-2019"
----
-
-
 <link href='https://cdn.jsdelivr.net/npm/yasgui@2.7.29/dist/yasgui.min.css' rel='stylesheet' type='text/css'/>
 <script src='https://cdn.jsdelivr.net/npm/yasgui@2.7.29/dist/yasgui.min.js'></script>
 
