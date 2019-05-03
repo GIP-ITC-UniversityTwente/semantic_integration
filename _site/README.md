@@ -1,5 +1,10 @@
-<link href='//cdn.jsdelivr.net/npm/yasgui@2.7.29/dist/yasgui.min.css' rel='stylesheet' type='text/css'/>
- <script src='//cdn.jsdelivr.net/npm/yasgui@2.7.29/dist/yasgui.min.js'></script>
+<link href='https://cdn.jsdelivr.net/npm/yasgui@2.7.29/dist/yasgui.min.css' rel='stylesheet' type='text/css'/>
+<script src='https://cdn.jsdelivr.net/npm/yasgui@2.7.29/dist/yasgui.min.js'></script>
+
+# sem_int_2019
+Materials for the course Semantic Integration
+ 
+ # Хуй вам
  
   <div id='yasgui'></div>
   <script type="text/javascript">
@@ -9,7 +14,6 @@
           //local-storage cache before you will see the changes taking effect
           //yasqe:{sparql:{endpoint:'bla'}}
       });
-  </script>
+  </script> 
 
-# SemInt2019
-rep for test
+
