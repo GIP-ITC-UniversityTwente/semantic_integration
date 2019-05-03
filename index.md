@@ -1,7 +1,6 @@
 ---
 layout: default
 title:  "Publication plan"
-subtitle: "Overview of papers planned 2018-2019"
 ---
 
 <link href='https://cdn.jsdelivr.net/npm/yasgui@2.7.29/dist/yasgui.min.css' rel='stylesheet' type='text/css'/>
@@ -10,7 +9,7 @@ subtitle: "Overview of papers planned 2018-2019"
 # sem_int_2019
 Materials for the course Semantic Integration
  
-## Хуй вам
+## Install GraphDB
  
   <div id='yasgui'></div>
   <script type="text/javascript">
