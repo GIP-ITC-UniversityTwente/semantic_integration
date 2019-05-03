@@ -10,7 +10,7 @@ subtitle: "Overview of papers planned 2018-2019"
 # sem_int_2019
 Materials for the course Semantic Integration
  
- # Хуй вам
+## Хуй вам
  
   <div id='yasgui'></div>
   <script type="text/javascript">
