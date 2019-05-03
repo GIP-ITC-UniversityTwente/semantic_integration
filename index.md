@@ -10,7 +10,7 @@ title:  "Publication plan"
 Materials for the course Semantic Integration
 
 
-<img src="/img/tut1.jpg" alt="Linked Data">
+<img src="/img/tut1.png" alt="Linked Data">
  
 ## Install GraphDB
 
