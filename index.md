@@ -1,7 +1,6 @@
 ---
 layout: default
 title:  "Semantic Integration 2019"
-subtitle: "Materials for the course"
 ---
 
 <link href='https://cdn.jsdelivr.net/npm/yasgui@2.7.29/dist/yasgui.min.css' rel='stylesheet' type='text/css'/>
