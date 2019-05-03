@@ -1,15 +1,11 @@
 ---
 layout: default
-title:  "Publication plan"
+title:  "Semantic Integration 2019"
+subtitle: "Materials for the course"
 ---
 
 <link href='https://cdn.jsdelivr.net/npm/yasgui@2.7.29/dist/yasgui.min.css' rel='stylesheet' type='text/css'/>
 <script src='https://cdn.jsdelivr.net/npm/yasgui@2.7.29/dist/yasgui.min.js'></script>
-
-# sem_int_2019
-Materials for the course Semantic Integration
-
-
 <img src="tut1.png" alt="Linked Data">
  
 ## Install GraphDB
