@@ -8,8 +8,13 @@ title:  "Publication plan"
 
 # sem_int_2019
 Materials for the course Semantic Integration
+
+
+<img src="/img/tut1.jpg" alt="Linked Data">
  
 ## Install GraphDB
+
+## Create the data
  
   <div id='yasgui'></div>
   <script type="text/javascript">
