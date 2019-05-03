@@ -8,5 +8,5 @@ include:
   - README.md
 
 #theme: jekyll-theme-tactile
-
+markdown: kramdown
 theme: jekyll-theme-slate
