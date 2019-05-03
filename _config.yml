@@ -6,4 +6,4 @@ relative_links:
 include:
   - main.md
 
-theme: jekyll-theme-typewriter
+theme: jekyll-theme-minimal
