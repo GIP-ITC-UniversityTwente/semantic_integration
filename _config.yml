@@ -8,4 +8,4 @@ include:
   - README.md
 
 markdown: kramdown
-theme: jekyll-theme-slate
+theme: jekyll-theme-leap-day
