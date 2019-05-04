@@ -1,17 +1,16 @@
-# Assignment Day 1
+# Assignment Day 1: Create RDF
 
-
-## Content
----
-1. [Introduction](#intro)
-2. [Step 0](#step0)
-3. [Step 1](#step1)
-
-
-## 1. Introduction <a name="intro"></a>
 In this tutorial you will learn how to create Linked Data representation of a simple table using software tools.
 The source for conversion is a table in a *.csv format. With the help of GraphDB this CSV-file 
 will be converted into Linked Data and stored in GraphDB.
+
+---------------
+
+## Content
+---
+1. [Step 0](#step0)
+2. [Step 1](#step1)
+
 
 **Comma-separated values (CSV)** is a widespread format for spreadsheets and simple databases.
 It uses plain text to store tabular data. Each record consists of one or more fields (columns),
