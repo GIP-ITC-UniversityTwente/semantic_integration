@@ -8,6 +8,15 @@ title:  "Semantic Integration 2019"
 <img src="tut1.png" alt="Linked Data">
 
 
+## Content
+---
+1. [About Linked Data](about_LD.md)
+2. [Activities](#activities)
+* [The Business Process Integration Lab](#bpil)
+* [Student supervision at ITC & Kadaster](#stusup)
+
+
+
 ## Introduction
 
 In this tutorial you will learn how to create Linked Data representation of a simple table using ontologies.

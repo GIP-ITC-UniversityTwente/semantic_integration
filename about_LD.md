@@ -54,7 +54,7 @@ into smaller bits of information, which are written in a formal structure. The c
 similar information. For example, it is assumed that the column with the name Registration ID hold only records with such ID,
 the opposite would be considered an error.
 
-![Data transformation from unstructured free text into structured table and to linked RDF.](about_ld_2.png)
+![Data transformation from unstructured free text into structured table and to linked RDF.](about_ld_2.png) 
 
 However, even though the computers can read the tables, it is not possible for them to reason upon such structures.
 To enable reasoning, a formal representation of the concepts and relations used in the data should be decoupled from
