@@ -19,5 +19,3 @@ technology and will generate your first Linked Data.
 3. [Assignment 1](SI_1.md)
 4. [Assignment 2](ST_2.md) 
 
-## Introduction
-
