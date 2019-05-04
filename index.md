@@ -11,11 +11,8 @@ title:  "Semantic Integration 2019"
 ## Content
 ---
 1. [About Linked Data](about_LD.md)
-2. [Activities](#activities)
-* [The Business Process Integration Lab](#bpil)
-* [Student supervision at ITC & Kadaster](#stusup)
-
-
+2. [Assignment 1](SI_1.md)
+3. [Assignment 2])(ST_2.md)
 
 ## Introduction
 
