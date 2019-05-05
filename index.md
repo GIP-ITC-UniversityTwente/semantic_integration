@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: landing
 title:  "Semantic Integration 2019"
 ---
 
