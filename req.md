@@ -1,6 +1,7 @@
 ---
 layout: page
-title:  "Semantic Integration 2019"
+title:  "Requirements"
+subtitle: "before you start"
 ---
 
 
