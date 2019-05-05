@@ -8,10 +8,12 @@ Linked Data applications.
 ---
 1. [Architecture](#arch)
 2. [Backend: Triplesore](#backend)
-  2.1 [Installation of GraphDB.]()
-  2.2
-  2.3
+  2.1 [Installation of GraphDB](#graphdb)
+  2.2 [Test the installation](#test)
+  2.3 [Allow requests from other domains](#cors)
 3. [Frontend](#front)
+  3.1 [YASGUI: Yet Another Sparql GUI](#yasgui)
+  3.2 [Sparklis](#sparklis)
 
 
 ## 1. Architecture <a name="arch"></a>
@@ -28,14 +30,14 @@ developed by [Ontotext](https://www.ontotext.com/), because it has:
 
 <img src="graphdb_logo.png" alt="GraphDB">
 
-### 2.1 Installation of GraphDB.
+### 2.1 Installation of GraphDB. <a name="graphdb"></a>
 
 - **Step 1.** Go to the [page of GraphDB](https://www.ontotext.com/products/graphdb/) to get a free copy of the software.
 - **Step 2.** Fill the form and request a link to your copy of the software. You should receive a email with download links. 
 - **Step 3.** Download and install a desktop version of the software for your platform (see [quick start quid](http://graphdb.ontotext.com/documentation/8.9/free/quick-start-guide.html#run-graphdb-as-a-desktop-installation)).   
 - **Step 4.** Run GraphDB. The Web interface of the triple store is available at [http://localhost:7200/](http://localhost:7200/).
 
-### 2.2 Test the installation
+### 2.2 Test the installation <a name="test"></a>
 
 - **Step 5.** Create a test repository. [See instructions on how to...](http://graphdb.ontotext.com/documentation/8.9/free/quick-start-guide.html#create-a-repository).
 - **Step 6.** Query the created repository. GraphDB automatically loads core vocabularies to 
@@ -52,7 +54,7 @@ a new repository. These can be queried. Therefore, select the created repository
 
 The query results will be rendered as a table. 
 
-### 2.3 Allow requests from other domains
+### 2.3 Allow requests from other domains <a name="cors"></a>
 
 - **Step 7.** Learn the endpoint address of your GraphDB. Go to *Setup* -> *Repositories* 
 and *copy repository URL to clipboard*. See the figure:
@@ -77,12 +79,12 @@ and *copy repository URL to clipboard*. See the figure:
 <img src="graphdb_logfile.png" alt="GraphDB console">
 
 
-## 3. Frontend
+## 3. Frontend <a name="frontend"></a>
 
-### 3.1 YASGUI: Yet Another Sparql GUI
+### 3.1 YASGUI: Yet Another Sparql GUI <a name="yasgui"></a>
 
 <img src="yasgui.png" alt="YasGui">
 Can be accessed on yasgui.org.
 Can be integrated into a wab page like this:
 
-### 3.2 Sparklis
+### 3.2 Sparklis <a name="sparklis"></a>
