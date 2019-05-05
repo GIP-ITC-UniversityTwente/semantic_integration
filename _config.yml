@@ -1,3 +1,8 @@
+# Site settings
+title: Semantic Integration
+description: Materials for the course
+
+
 plugins:
   - jekyll-relative-links
   - jekyll-optional-front-matter
