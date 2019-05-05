@@ -7,15 +7,20 @@ Linked Data applications.
 ## Backend: Triplesore
 Databases built for the storage and retrieval of triples using semantic queries are called triplestores. 
 The list of existing implementation is quite impressive and includes about 50 different solutions. 
-For tutorial we will install and use **[GraphDB](https://www.ontotext.com/products/graphdb/)** because it has: 
+For tutorial we will install and use **[GraphDB](https://www.ontotext.com/products/graphdb/)**, 
+developed by [Ontotext](https://www.ontotext.com/), because it has: 
 - a lovely Graphical User Interface and 
 - support of [geoSPARQL](http://graphdb.ontotext.com/documentation/free/geosparql-support.html)
 - a free version
 
-### Installation of GraphDB
-- **Step 1. Go to the Register to get a free copy of GraphDB.**
-- 
+<img src="graphdb_logo.png" alt="GraphDB">
 
+### Installation of GraphDB
+- **Step 1.** Go to the [page of GraphDB](https://www.ontotext.com/products/graphdb/) to get a free copy of the software.**
+- **Step 2.** Fill the form and request a link to your copy of the software.
+- **Step 3.** Once you received the email with the download links, you will need to download and install the package for a desktop installation for your platform.
+- **Step 4** 
+- 
 ## 
 
 # Frontend: 
