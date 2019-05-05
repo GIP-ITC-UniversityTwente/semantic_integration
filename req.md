@@ -50,12 +50,11 @@ and *copy repository URL to clipboard*. See the figure:
   In GraphDB, the generic schema for the repository URL looks 
   like:
   
-    ```http://{ip_address}:{port}/repositories/{repository_ID}```
   
   
-  dfvbdfbdvfbdfvbdfv
+     ``` http://{ip_address}:{port}/repositories/{repository_ID} ```
   
-  
+
   ```
   http://{ip_address}:{port}/repositories/{repository_ID}
   ```
