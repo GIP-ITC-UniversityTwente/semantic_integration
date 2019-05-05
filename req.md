@@ -15,12 +15,12 @@ Linked Data applications.
 ---
 1. [Architecture](#arch)
 2. [Backend: Triplesore](#backend)
-3. [Installation of GraphDB](#graphdb)
-4. [Test the installation](#test)
-5. [Allow requests from other domains](#cors)
+  3. [Installation of GraphDB](#graphdb)
+  4. [Test the installation](#test)
+  5. [Allow requests from other domains](#cors)
 6. [Frontend](#frontend)
-7. [YASGUI: Yet Another Sparql GUI](#yasgui)
-8. [Sparklis](#sparklis)
+  7. [YASGUI: Yet Another Sparql GUI](#yasgui)
+  8. [Sparklis](#sparklis)
 
 
 
