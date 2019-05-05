@@ -2,10 +2,22 @@
 Tutorials and assignments of this course require installation of some tools to mimic a common architecture of 
 Linked Data applications. 
 
-## Architecture
+---------------
+
+## Content
+---
+1. [Architecture](#arch)
+2. [Backend: Triplesore](#backend)
+  2.1 [Installation of GraphDB.]()
+  2.2
+  2.3
+3. [Frontend](#front)
+
+
+## 1. Architecture <a name="arch"></a>
 This architecture is depicted in the figure below. 
 
-### Backend: Triplesore.
+## 2. Backend: Triplesore. <a name="backend"></a>
 Databases built for the storage and retrieval of triples using semantic queries are called triplestores. 
 The list of existing implementation is quite impressive and includes about 50 different solutions. 
 For tutorial we will install and use **[GraphDB](https://www.ontotext.com/products/graphdb/)**, 
@@ -16,14 +28,14 @@ developed by [Ontotext](https://www.ontotext.com/), because it has:
 
 <img src="graphdb_logo.png" alt="GraphDB">
 
-#### Installation of GraphDB.
+### 2.1 Installation of GraphDB.
 
 - **Step 1.** Go to the [page of GraphDB](https://www.ontotext.com/products/graphdb/) to get a free copy of the software.
 - **Step 2.** Fill the form and request a link to your copy of the software. You should receive a email with download links. 
 - **Step 3.** Download and install a desktop version of the software for your platform (see [quick start quid](http://graphdb.ontotext.com/documentation/8.9/free/quick-start-guide.html#run-graphdb-as-a-desktop-installation)).   
 - **Step 4.** Run GraphDB. The Web interface of the triple store is available at [http://localhost:7200/](http://localhost:7200/).
 
-#### Test the installation
+### 2.2 Test the installation
 
 - **Step 5.** Create a test repository. [See instructions on how to...](http://graphdb.ontotext.com/documentation/8.9/free/quick-start-guide.html#create-a-repository).
 - **Step 6.** Query the created repository. GraphDB automatically loads core vocabularies to 
@@ -40,7 +52,7 @@ a new repository. These can be queried. Therefore, select the created repository
 
 The query results will be rendered as a table. 
 
-### Allow requests from other domains
+### 2.3 Allow requests from other domains
 
 - **Step 7.** Learn the endpoint address of your GraphDB. Go to *Setup* -> *Repositories* 
 and *copy repository URL to clipboard*. See the figure:
@@ -65,12 +77,12 @@ and *copy repository URL to clipboard*. See the figure:
 <img src="graphdb_logfile.png" alt="GraphDB console">
 
 
-# Frontend: 
+## 3. Frontend
 
-## YASGUI: Yet Another Sparql GUI
+### 3.1 YASGUI: Yet Another Sparql GUI
 
 <img src="yasgui.png" alt="YasGui">
 Can be accessed on yasgui.org.
 Can be integrated into a wab page like this:
 
-## Sparklis
+### 3.2 Sparklis
