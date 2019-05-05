@@ -27,8 +27,8 @@ developed by [Ontotext](https://www.ontotext.com/), because it has:
 - **Step 5.** Create a test repository. [See instructions on how to...](http://graphdb.ontotext.com/documentation/8.9/free/quick-start-guide.html#create-a-repository).
 - **Step 6.** Learn the endpoint address of GraphDB. Go to *Setup* -> *Repositories* 
 and *copy repository URL to clipboard*. The URL address of the repositories endpoint will look like:
-  --* `http://{ip address}:7200/repositories/{repositoryID}` 
-  --* `http://localhost:7200/repositories/{repositoryID}` 
+    - `http://{ip address}:7200/repositories/{repositoryID}` 
+    - `http://localhost:7200/repositories/{repositoryID}` 
 
 <img src="graphdb_endpoint_url.png" alt="copy repository URL to clipboard">
 
