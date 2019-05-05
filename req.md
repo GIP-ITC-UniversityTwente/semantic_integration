@@ -49,18 +49,13 @@ and *copy repository URL to clipboard*. See the figure:
   
   In GraphDB, the generic schema for the repository URL looks 
   like:
-  
-  
-  
-     ``` http://{ip_address}:{port}/repositories/{repository_ID} ```
-  
 
   ```
   http://{ip_address}:{port}/repositories/{repository_ID}
   ```
   
-  The repository URL can 
-  be used to query your data from other Web pages which makes it part of the Web of Data.  
+  Such a repository URL can be used to query the data from other Web pages 
+  which makes it a part of the Web of Data.  
 
 - **Step 7.** 
 
