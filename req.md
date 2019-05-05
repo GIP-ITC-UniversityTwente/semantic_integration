@@ -13,5 +13,10 @@
 # Frontend: 
 
 ## YasGUI
+Can be accessed on yasgui.org.
+Can be integrated into a wab page like this:
+
+
+
 
 ## Sparklis

@@ -15,7 +15,7 @@ Therefore, make sure that your queries don't multiply everything by everything.
 2. [Step 1](#step1)
 
 
-## Use LIMIT
+## Use LIMIT  <a name="limit"></a>
 
 However, even though most of the repositories set limitations on query runtime and the number
 of output triples to protect the service, it is a good practice to use ***LIMIT*** keyword in your queries to limit number of triples that triple store returns.
