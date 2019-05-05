@@ -28,12 +28,19 @@ developed by [Ontotext](https://www.ontotext.com/), because it has:
 - **Step 6.** Query the created repository. Select the created repository from the 
  drop down menu, and click the SPARQL menu tab. Run the default query:
  
- ````select * where { 
-     	?s ?p ?o .
+ ```` 
+ select * where {
+      	?s ?p ?o .
      } limit 100 
+     
 ````
 
-
+ ```` javascript
+ select * where {
+      	?s ?p ?o .
+     } limit 100 
+     
+````
 - **Step 6.** Learn the endpoint address of GraphDB. Go to *Setup* -> *Repositories* 
 and *copy repository URL to clipboard*. See the figure:
 
