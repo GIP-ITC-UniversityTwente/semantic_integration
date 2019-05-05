@@ -17,9 +17,9 @@ developed by [Ontotext](https://www.ontotext.com/), because it has:
 
 ### Installation of GraphDB
 - **Step 1.** Go to the [page of GraphDB](https://www.ontotext.com/products/graphdb/) to get a free copy of the software.**
-- **Step 2.** Fill the form and request a link to your copy of the software.
-- **Step 3.** Once you received the email with the download links, you will need to download and install the package for a desktop installation for your platform.
-- **Step 4** 
+- **Step 2.** Fill the form and request a link to your copy of the software. You should receive a email with download links. 
+- **Step 3.** Download and install a desktop version of the software for your platform.
+- **Step 4** Run GraphDB. The Web interface of the triple store is available at [port:7200](http://localhost:7200/) 
 - 
 ## 
 
