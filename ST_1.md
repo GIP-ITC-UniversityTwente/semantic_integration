@@ -15,6 +15,7 @@ will be converted into Linked Data and stored in GraphDB.
 - [1. Step 0](#step0)
 - [2. Step 1](#step1)
 
+---------------
 
 **Comma-separated values (CSV)** is a widespread format for spreadsheets and simple databases.
 It uses plain text to store tabular data. Each record consists of one or more fields (columns),

@@ -1,4 +1,8 @@
-# Assignment Day 1: Query Linked Data
+---
+layout: page
+title:  "Assignment Day 1: Create RDF"
+subtitle: "Moving from the 3rd star"
+---
 
 In this tutorial you will learn how to query Linked Data you have created.
 [SPARQL](https://www.PAw3.org/TR/sparql11-query/) is the query language for the Semantic Web and Linked Data.
@@ -11,9 +15,10 @@ Therefore, make sure that your queries don't multiply everything by everything.
 
 ## Content
 ---
-1. [Use Limit](#limit)
-2. [Step 1](#step1)
+- [1. Use Limit](#limit)
+- [2. Step 1](#step1)
 
+--------------
 
 ## Use LIMIT  <a name="limit"></a>
 
