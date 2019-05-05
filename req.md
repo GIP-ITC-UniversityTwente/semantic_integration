@@ -41,12 +41,15 @@ a new repository. These can be queried. Therefore, select the created repository
 The query results will be rendered as a table. 
 
 ### Allow requests from other domains
-- **Step 7.** Learn the endpoint address of GraphDB. Go to *Setup* -> *Repositories* 
+
+- **Step 7.** Learn the endpoint address of your GraphDB. Go to *Setup* -> *Repositories* 
 and *copy repository URL to clipboard*. See the figure:
 
   <img src="graphdb_endpoint_url.png" alt="copy repository URL to clipboard">
   
-  In GraphDB, the generic schema for the repository URL looks like`http://{ip address}:{port}/repositories/{repositoryID}`.
+  In GraphDB, the generic schema for the repository URL looks 
+  like`http://{ip_address}:{port}/repositories/{repository_ID}`. The repository URL can 
+  be used to query your data from other Web pages which makes it part of the Web of Data.  
 
 - **Step 7.** 
 
