@@ -48,7 +48,12 @@ and *copy repository URL to clipboard*. See the figure:
   <img src="graphdb_endpoint_url.png" alt="copy repository URL to clipboard">
   
   In GraphDB, the generic schema for the repository URL looks 
-  like`http://{ip_address}:{port}/repositories/{repository_ID}`. The repository URL can 
+  like:
+  ```
+  http://{ip_address}:{port}/repositories/{repository_ID}
+  ```
+  
+  The repository URL can 
   be used to query your data from other Web pages which makes it part of the Web of Data.  
 
 - **Step 7.** 
