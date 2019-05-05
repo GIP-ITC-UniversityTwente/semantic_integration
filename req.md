@@ -54,10 +54,10 @@ and *copy repository URL to clipboard*. See the figure:
   http://{ip_address}:{port}/repositories/{repository_ID}
   ```
   
-  Such a repository URL can be used to query the data from other Web pages 
+  Such a repository URL can be used to query local data from external Web pages via SPARQL protocol
   which makes it a part of the Web of Data.  
-
-- **Step 7.** 
+  
+- **Step 8.** 
 
 
 
