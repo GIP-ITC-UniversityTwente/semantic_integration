@@ -4,8 +4,6 @@ title:  "Requirements"
 subtitle: "before you start"
 ---
 
-
-# Requirements
 Tutorials and assignments of this course require installation of some tools to mimic a common architecture of 
 Linked Data applications. 
 
