@@ -1,4 +1,8 @@
-# About Linked Data
+---
+layout: page
+title:  "About Linked Data"
+subtitle: "Linked data principles"
+---
 
 ## Linked data principles
 
