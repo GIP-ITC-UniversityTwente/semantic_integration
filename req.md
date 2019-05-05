@@ -3,9 +3,7 @@ layout: page
 title:  "Requirements"
 subtitle: "before you start"
 ---
-Tutorials and assignments of this course require installation of some tools to mimic a common architecture of 
-Linked Data applications. 
----------------
+
 ## Content
 ---
 - [1. Architecture](#arch)
@@ -18,7 +16,10 @@ Linked Data applications.
   - [3.2 Sparklis](#sparklis)
 
 
+Tutorials and assignments of this course require installation of some tools 
+to mimic a common architecture of Linked Data applications. 
 
+---------------
 
 
 ## 1. Architecture <a name="arch"></a>
