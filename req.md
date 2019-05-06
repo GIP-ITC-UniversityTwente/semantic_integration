@@ -90,7 +90,7 @@ and *copy repository URL to clipboard*. See the figure:
 [YASGUI (Yet Another SPARQL GUI)](http://yasgui.org/) is an example of such an interface. 
 Therefore, lets try to query data in your local instance of GraphDB from the page your are reading. 
 YasGui interface is deployed into this page. In the form below, 
-provide the address of the endpoint (  `http://localhost:720/repositories/test`) and click the run button 
+provide the address of the endpoint (`http://localhost:720/repositories/test`) and click the run button 
 
 <div id='yasgui'></div>  
 <script type="text/javascript">
