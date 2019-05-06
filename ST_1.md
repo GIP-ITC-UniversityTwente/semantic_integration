@@ -16,8 +16,9 @@ will be converted into Linked Data and stored in GraphDB.
 - [Step 0: Let’s make a table](#step0)
 - [Step 1: Upload Data via OntoRefine](#step1)
 - [Step 2: Make an RDF representation of your table](#step2)
-- [Step 3: Make your RDF Linked Data](#step3)
-- [Step 4: Do it yourself](#step4)
+- [Step 3: Import RDF data in GraphDB](#step3)
+- [Step 4: Make your RDF Linked Data](#step4)
+- [Step 5: Do it yourself](#step5)
 ---------------
 
 **Comma-separated values (CSV)** is a widespread format for spreadsheets and simple databases.
@@ -72,7 +73,7 @@ valid RDF where rows and columns from the table are mapped with the help of the 
 - `mydata:rowNumber` - the property for row number as an integer literal;
 - `mydata:<column_name>` - properties for each column
 
-### Step 2: Import RDF data in GraphDB.  <a name="step2"></a> 
+### Step 3: Import RDF data in GraphDB.  <a name="step3"></a> 
 When you are satisfied with the transformation of your data, you can import it in 
 the current repository without leaving the GraphDB Workbench. 
 
@@ -82,10 +83,10 @@ The query is the same as the previous one only with the addition of a `SERVICE` 
 You only have to change `CONSTRUCT` to `INSERT` and remove the `LIMIT`. Instead of showing the RDF,
  GraphDB will insert it into the current repository.
 
-### Step 3: Make your RDF Linked Data <a name="step3"></a>
+### Step 4: Make your RDF Linked Data <a name="step4"></a>
 
 
-### Step 4: Do it Yourself <a name="step4"></a>
+### Step 5: Do it Yourself <a name="step5"></a>
 
 
 
