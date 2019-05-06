@@ -85,10 +85,10 @@ You only have to change `CONSTRUCT` to `INSERT` and remove the `LIMIT`. Instead 
 
 ### Step 4: Make your RDF-data Linked Data <a name="step4"></a>
 Data that were just created and upload to a triple store is a four star data. 
-It follows tree out of the [four linked data design rules]((https://www.w3.org/DesignIssues/LinkedData.html))
-In this step we will 
+It follows tree out of the [four linked data design rules](https://www.w3.org/DesignIssues/LinkedData.html).
+In this step we will implement the fourth rule, namely:
 
->4. Include links to other URIs so that people can discover more things
+> 4. Include links to other URIs so that people can discover more things
 
 
 ### Step 5: Do it Yourself! <a name="step5"></a>
