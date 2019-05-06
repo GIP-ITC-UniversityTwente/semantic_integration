@@ -104,8 +104,13 @@ provide the address of the endpoint (  `http://localhost:720/repositories/test`)
 
 If you are able to see the results of the query then congrutulation, you are done with all the prerequsits. 
 If you see something like:
+
 <img src="CORS_NO.png" alt="CORS_NO">
 
 Then follow the next step. 
 
-- **Step 9.**  Enable the [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) 
+- **Step 9.**  Enable the [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS). 
+Open the settings window of GraphDB by double-clicking the GraphDB icon in the system tray. 
+Enable the CORS support by running the command `-Dgraphdb.workbench.cors.enable=true` . Click *Save and Restart*.
+
+ <img src="CORS_YES.png" alt="CORS_YES">
