@@ -15,7 +15,9 @@ will be converted into Linked Data and stored in GraphDB.
 ---
 - [Step 0: Let’s make a table](#step0)
 - [Step 1: Upload Data via OntoRefine](#step1)
-
+- [Step 2: Make an RDF representation of your table](#step2)
+- [Step 3: Make your RDF Linked Data](#step3)
+- [Step 4: Do it yourself](#step4)
 ---------------
 
 **Comma-separated values (CSV)** is a widespread format for spreadsheets and simple databases.
@@ -62,7 +64,7 @@ inconsistencies, convert it into RDF, and import it into a repository.
 
 Follow the tutorial on how [to upload data into OntoRefine](http://graphdb.ontotext.com/documentation/8.9/free/loading-data-using-ontorefine.html#what-s-in-this-document) 
 
-### Step 2: Make an RDF representation of your table.
+### Step 2: Make an RDF representation of your table.  <a name="step2"></a>
 If you click RDF button in OntoRefine you will be able to see a RDFized version of the table. This is a proper 
 valid RDF where rows and columns from the table are mapped with the help of the following URIs:
 
@@ -80,7 +82,11 @@ The query is the same as the previous one only with the addition of a SERVICE cl
  GraphDB will insert it into the current repository.
 
 
-### Step 3:Make your RDF Linked Data
+### Step 3: Make your RDF Linked Data <a name="step3"></a>
+
+
+### Step 4: Do it Yourself <a name="step4"></a>
+
 
 
 
