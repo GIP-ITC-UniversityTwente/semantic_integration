@@ -38,6 +38,7 @@ developed by [Ontotext](https://www.ontotext.com/), because it has:
 <img src="graphdb_logo.png" alt="GraphDB">
 
 ### 2.1 Installation of GraphDB. <a name="graphdb"></a>
+The triple store can be installed in four steps as follows:
 
 - **Step 1.** Go to the [page of GraphDB](https://www.ontotext.com/products/graphdb/) to get a free copy of the software.
 - **Step 2.** Fill the form and request a link to your copy of the software. You should receive a email with download links. 
