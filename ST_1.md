@@ -66,7 +66,7 @@ inconsistencies, convert it into RDF, and import it into a repository.
 Follow the tutorial on how [to upload data into OntoRefine](http://graphdb.ontotext.com/documentation/8.9/free/loading-data-using-ontorefine.html#what-s-in-this-document) 
 
 ### Step 2: Make an RDF representation of your table.  <a name="step2"></a>
-If you click RDF button in OntoRefine you will be able to see an RDFized version of the table. This is a proper 
+If you click *RDF* button in OntoRefine you will be able to see an RDFized version of the table. This is a proper 
 valid RDF where rows and columns from the table are mapped with the help of the following URIs:
 
 - `mydata:Row` - the RDF type for each row;
@@ -101,15 +101,18 @@ it is not possible to link data to literal values in RDF. Therefore, in order to
  Therefore, we need to substitute literal values of places with relevant URIs from Wikidata. THis will link our data to Wikidata. 
  OntoRefine is able to help us with such linking. 
  
- In ontorefine select drop down menu for the place of birth column and 
+ In OntoRefine select your project and click the drop down menu for the place of birth column and 
  click *Reconcile* -> *Start reconciling...* as follows: 
  
  <img src="recon.png" alt="reconciliation">
  
- Select a service from the left to be used for reconciliation. 
- This will trigger literal matching between the data in Wikidata and your data. 
-
-
+ Select a service from the left to be used for reconciliation (Wikidata). This will trigger 
+ literal matching between the data in Wikidata and your data. When the mathcing is done you will be 
+ prompted to specify the type of entities you are reconciling. In our case these are municipality of the Netherlands.
+ Click *Start Reconciling*. This will update the *place of birth* field in the table. 
+ 
+Make an RDF version of the data (See [Step 2](#step2)) and make sure that you have URIs for places 
+of birth instead pf literal values. Your data is linked now!
 
 ### Step 5: Do it Yourself! <a name="step5"></a>
 Repeat the steps of this tutorial but use your own data with your real name, age and your place of birth. 
