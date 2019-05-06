@@ -53,7 +53,7 @@ The triple store can be installed in four steps as follows:
 If you have GraphDB running at [http://localhost:7200/](http://localhost:7200/) then create 
 a test repository and run your first SPARQL query as follows:  
 
-- **Step 5.** Create a test repository. [See instructions on how to...](http://graphdb.ontotext.com/documentation/8.9/free/quick-start-guide.html#create-a-repository).
+- **Step 5.** Create a test repository with repository ID *test*. [See instructions on how to...](http://graphdb.ontotext.com/documentation/8.9/free/quick-start-guide.html#create-a-repository).
 - **Step 6.** Query the created repository. GraphDB automatically loads core vocabularies to 
 a new repository. These can be queried. Therefore, select the created repository from the 
  drop down menu, and click the SPARQL menu tab. Run the default query that returns 
@@ -108,12 +108,9 @@ against your endpoint:
         //Uncomment below to change the default endpoint
         //Note: If you've already opened the YASGUI page before, you should first clear your
         //local-storage cache before you will see the changes taking effect
-        //yasqe:{sparql:{endpoint:'bla'}}
+        yasqe:{sparql:{endpoint:'https://localhost:7200/repositories/test'}}
     });
 </script>
-
-
-
 
 
 ## 3. Frontend <a name="frontend"></a>
