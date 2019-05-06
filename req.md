@@ -14,22 +14,14 @@ to recreate a common architecture of Linked Data applications.
 
 ## Content
 ---
-- [1. Architecture](#arch)
-- [2. Backend: Triplesore](#backend)
-  - [2.1 Installation of GraphDB](#graphdb)
-  - [2.2 Test the installation](#test)
-  - [2.3 Allow requests from other domains](#cors) 
-- [3. Frontend](#frontend)
-  - [3.1 YASGUI: Yet Another Sparql GUI](#yasgui)
-  - [3.2 Sparklis](#sparklis)
+- [The triplestore](#backend)
+- [Installation of GraphDB](#graphdb)
+- [Test the installation](#test)
+- [Allow requests from other domains](#cors) 
 
 ---------------
 
-
-## 1. Architecture <a name="arch"></a>
-This architecture is depicted in the figure below. 
-
-## 2. Backend: Triplesore. <a name="backend"></a>
+## The triplestore. <a name="backend"></a>
 Databases built for the storage and retrieval of triples using semantic queries are called triplestores. 
 The list of existing implementation is quite impressive and includes about 50 different solutions. 
 
@@ -41,7 +33,7 @@ developed by [Ontotext](https://www.ontotext.com/), because it has:
 - a support of [geoSPARQL](http://graphdb.ontotext.com/documentation/free/geosparql-support.html)
 - a free version
 
-### 2.1 Installation of GraphDB. <a name="graphdb"></a>
+### Installation of GraphDB. <a name="graphdb"></a>
 The triple store can be installed in four steps as follows:
 
 - **Step 1.** Go to the [page of GraphDB](https://www.ontotext.com/products/graphdb/) to get a free copy of the software.
@@ -49,7 +41,7 @@ The triple store can be installed in four steps as follows:
 - **Step 3.** Download and install a desktop version of the software for your platform (see [quick start quid](http://graphdb.ontotext.com/documentation/8.9/free/quick-start-guide.html#run-graphdb-as-a-desktop-installation)).   
 - **Step 4.** Run GraphDB. The Web interface of the triple store is available at [http://localhost:7200/](http://localhost:7200/).
 
-### 2.2 Test the installation <a name="test"></a>
+### Test the installation <a name="test"></a>
 If you have GraphDB running at [http://localhost:7200/](http://localhost:7200/) then create 
 a test repository and run your first SPARQL query as follows:  
 
@@ -67,7 +59,7 @@ a new repository. These can be queried. Therefore, select the created repository
 ````
 If everything works fine you will see query results rendered as a table. 
 
-### 2.3 Allow requests from other domains <a name="cors"></a>
+### Allow requests from other domains <a name="cors"></a>
 It is possible to run federated queries from the GraphDB Workbench. However, despite of the fact 
 that your GraphDB installed as a local service it can be access from the World Wide Web. The only thing to do is to 
 enable the [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) in your GraphDB. 
