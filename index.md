@@ -17,6 +17,5 @@ technology and will generate your first Linked Data.
 1. [About Linked Data](about_LD.md)
 2. [Prerequisites: Data and Tools](req.md)
 3. [Assignment Day 1 : Create RDF](ST_1.md)
-4. [Assignment Day 1 : Query Linked Data](ST_2.md)
 
 
