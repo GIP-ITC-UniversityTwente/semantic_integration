@@ -102,8 +102,6 @@ WHERE {
 LIMIT 10    
 ````
 against your endpoint:
-<img src="yasgui_anat_red.png" alt="YasGI interface">
-
 <div id='yasgui'></div>
 <script type="text/javascript">
     var yasgui = YASGUI(document.getElementById("yasgui"), {
@@ -115,7 +113,7 @@ against your endpoint:
 </script>
 
 
-<img src="graphdb_logfile.png" alt="GraphDB console">
+
 
 
 ## 3. Frontend <a name="frontend"></a>
@@ -127,3 +125,7 @@ Can be accessed on yasgui.org.
 Can be integrated into a wab page like this:
 
 ### 3.2 Sparklis <a name="sparklis"></a>
+
+<img src="yasgui_anat_red.png" alt="YasGI interface">
+
+<img src="graphdb_logfile.png" alt="GraphDB console">
