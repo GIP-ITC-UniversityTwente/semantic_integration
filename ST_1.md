@@ -83,10 +83,15 @@ The query is the same as the previous one only with the addition of a `SERVICE` 
 You only have to change `CONSTRUCT` to `INSERT` and remove the `LIMIT`. Instead of showing the RDF,
  GraphDB will insert it into the current repository.
 
-### Step 4: Make your RDF Linked Data <a name="step4"></a>
+### Step 4: Make your RDF-data Linked Data <a name="step4"></a>
+Data that were just created and upload to a triple store is a four star data. 
+It follows tree out of the [four linked data design rules]((https://www.w3.org/DesignIssues/LinkedData.html))
+In this step we will 
+
+>4. Include links to other URIs so that people can discover more things
 
 
-### Step 5: Do it Yourself <a name="step5"></a>
+### Step 5: Do it Yourself! <a name="step5"></a>
 
 
 
