@@ -90,19 +90,23 @@ In this step we will implement the fourth rule, namely:
 
 > - Include links to other URIs so that people can discover more things
 
-For example, the the data for this tutorial contained information about the place of birth. 
-In the table, these values (e.g "Utrecht") were represented as a strings. Unfortunately, 
-it is not possible to link data to string values in RDF. Therefore, in order to discover more things about
- the places of birth this information should be linkable e.i represented as a valid URI.
+For example, the data for this tutorial contained information about the place of birth. 
+In the table, these values (e.g "Utrecht") were represented as literals (strings). Unfortunately, 
+it is not possible to link data to literal values in RDF. Therefore, in order to discover more things about
+ the places of birth this information should be linkable e.i by being represented as a valid URI.
  
  In the concept of the Semantic Web HTTP URIs are used as names for real-world objects and abstract concepts
- rather than as addresses for Web documents.
+ rather than as addresses for Web documents. For example, `http://www.wikidata.org/entity/Q803` is a URI identifier for Utrecht 
+ in [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page). Any information related to Utrecht will be linked to this URI. 
+ Therefore, we need to substitute literal values of places with relevant URIs from Wikidata. THis will link our data to Wikidata. 
+ OntoRefine is able to help us with such linking. 
  
- For example, `http://www.wikidata.org/entity/Q803` is a URI identifier for Utrecht 
- in [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page). 
- Any information related to Utrecht will be linked to this URI. 
- Therefore, we need to substitute literal values with relevant URIs from Wikidata. 
- OntoRefine is able to help us with such 
+ In ontorefine select dropdown menue for the place of birth column and click reconsile -> start reconsilitation as follows: 
+ 
+ <img src="recon.png" alt="reconciliation">
+ 
+ Select service - Wikidata(en)
+ 
  
  
 
