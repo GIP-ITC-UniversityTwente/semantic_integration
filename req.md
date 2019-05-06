@@ -101,8 +101,8 @@ WHERE {
 } 
 LIMIT 10    
 ````
-against your endpoint: <div id='yasgui'></div>  
-
+against your endpoint: 
+<div id='yasgui'></div>  
 <script type="text/javascript">
     var yasgui = YASGUI(document.getElementById("yasgui"), {
         //Uncomment below to change the default endpoint
