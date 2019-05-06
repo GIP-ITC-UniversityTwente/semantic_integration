@@ -7,7 +7,7 @@ subtitle: "before you start"
 <link href='https://cdn.jsdelivr.net/npm/yasgui@2.7.29/dist/yasgui.min.css' rel='stylesheet' type='text/css'/>
 <script src='https://cdn.jsdelivr.net/npm/yasgui@2.7.29/dist/yasgui.min.js'></script>
 
-Tutorials and assignments of this course require installation of some tools 
+Tutorials and assignments of this course require installation of a triplestore
 to recreate a common architecture of Linked Data applications. 
 
 ---------------
@@ -33,7 +33,7 @@ developed by [Ontotext](https://www.ontotext.com/), because it has:
 - a support of [geoSPARQL](http://graphdb.ontotext.com/documentation/free/geosparql-support.html)
 - a free version
 
-### Installation of GraphDB. <a name="graphdb"></a>
+## Installation of GraphDB. <a name="graphdb"></a>
 The triple store can be installed in four steps as follows:
 
 - **Step 1.** Go to the [page of GraphDB](https://www.ontotext.com/products/graphdb/) to get a free copy of the software.
@@ -41,7 +41,7 @@ The triple store can be installed in four steps as follows:
 - **Step 3.** Download and install a desktop version of the software for your platform (see [quick start quid](http://graphdb.ontotext.com/documentation/8.9/free/quick-start-guide.html#run-graphdb-as-a-desktop-installation)).   
 - **Step 4.** Run GraphDB. The Web interface of the triple store is available at [http://localhost:7200/](http://localhost:7200/).
 
-### Test the installation <a name="test"></a>
+## Test the installation <a name="test"></a>
 If you have GraphDB running at [http://localhost:7200/](http://localhost:7200/) then create 
 a test repository and run your first SPARQL query as follows:  
 
@@ -59,7 +59,7 @@ a new repository. These can be queried. Therefore, select the created repository
 ````
 If everything works fine you will see query results rendered as a table. 
 
-### Allow requests from other domains <a name="cors"></a>
+## Allow requests from other domains <a name="cors"></a>
 It is possible to run federated queries from the GraphDB Workbench. However, despite of the fact 
 that your GraphDB installed as a local service it can be access from the World Wide Web. The only thing to do is to 
 enable the [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) in your GraphDB. 
@@ -86,7 +86,7 @@ and *copy repository URL to clipboard*. See the figure:
    Such a repository URL can be used to query local data from external Web pages via SPARQL protocol
   which makes it a part of the Web of Data. The URL is generated automatically every time you restart GraphDB. 
   
-- **Step 8.**  Query your data from outside. You can use external query interfaces to query your data using the repository URL. 
+- **Step 8.**<a name="step8"></a>  Query your data from outside. You can use external query interfaces to query your data using the repository URL. 
 [YASGUI (Yet Another SPARQL GUI)](http://yasgui.org/) is an example of such an interface. 
 Therefore, lets try to query data in your local instance of GraphDB from the page your are reading. 
 YasGui interface is deployed into this page. In the form below, 
@@ -114,3 +114,5 @@ Open the settings window of GraphDB by double-clicking the GraphDB icon in the s
 Enable the CORS support by running the command `-Dgraphdb.workbench.cors.enable=true` . Click *Save and Restart*.
 
  <img src="CORS_YES.png" alt="CORS_YES">
+
+Try to query the data via YasGUI as described in [**Step 8**](#step8).
