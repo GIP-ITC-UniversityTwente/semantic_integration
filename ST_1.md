@@ -53,7 +53,7 @@ This data will be converted into RDF using GraphDB in the next step.
 
 Once the table is created it can be uploaded into GraphDB for transformation into LD and importing.
 
->GraphDB OntoRefine is a data transformation tool, based on OpenRefine and integrated in the 
+>GraphDB OntoRefine is a data transformation tool, based on [OpenRefine](http://openrefine.org/) and integrated in the 
 GraphDB Workbench. It can be used for converting tabular data into RDF and importing it 
 into a GraphDB repository, using simple SPARQL queries and a virtual endpoint. 
 The supported formats are TSV, CSV, *SV, XLS, XLSX, JSON, XML, RDF as XML, 
