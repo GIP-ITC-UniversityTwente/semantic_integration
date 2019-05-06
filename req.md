@@ -95,12 +95,11 @@ and *copy repository URL to clipboard*. See the figure:
   which makes it a part of the Web of Data. The URL is generated automatically every time you restart GraphDB. 
   
 - **Step 8.**  Query your data from outside. You can use external query interfaces to query your data using the repository URL. 
-[YASGUI (Yet Another SPARQL GUI)](http://yasgui.org/) is an example of such an interface.
-<img src="yasgui.png" alt="YasGui">
+[YASGUI (Yet Another SPARQL GUI)](http://yasgui.org/) is an example of such an interface. 
 Therefore, lets try to query data in your local instance of GraphDB from the page your are reading. 
-YasGui interface is deployed into this page. 
+YasGui interface is deployed into this page. In the form below, 
+provide the address of the endpoint (  `http://localhost:720/repositories/test`) and click the run button 
 
-against your endpoint: 
 <div id='yasgui'></div>  
 <script type="text/javascript">
     var yasgui = YASGUI(document.getElementById("yasgui"), {
@@ -111,17 +110,10 @@ against your endpoint:
     });
 </script>
 
+If you are able to see the results of the query then congrutulation, you are done with all the prerequsits. 
+If you see something like:
+<img src="CORS_NO.png" alt="CORS_NO">
 
-## 3. Frontend <a name="frontend"></a>
+Then follow the next step. 
 
-### 3.1 YASGUI: Yet Another Sparql GUI <a name="yasgui"></a>
-
-<img src="yasgui.png" alt="YasGui">
-Can be accessed on yasgui.org.
-Can be integrated into a wab page like this:
-
-### 3.2 Sparklis <a name="sparklis"></a>
-
-<img src="yasgui_anat_red.png" alt="YasGI interface">
-
-<img src="graphdb_logfile.png" alt="GraphDB console">
+- **Step 9.**  Enable the [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) 
