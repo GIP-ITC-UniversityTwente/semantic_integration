@@ -84,23 +84,22 @@ and *copy repository URL to clipboard*. See the figure:
   ```
   http://{ip_address}:{port}/repositories/{repository_ID}
   ```
+  it is also equvavelnt to 
   
-  Such a repository URL can be used to query local data from external Web pages via SPARQL protocol
+  
+  ```
+  http://localhost:{port}/repositories/{repository_ID}
+  ```
+  
+   Such a repository URL can be used to query local data from external Web pages via SPARQL protocol
   which makes it a part of the Web of Data. The URL is generated automatically every time you restart GraphDB. 
   
 - **Step 8.**  Query your data from outside. You can use external query interfaces to query your data using the repository URL. 
 [YASGUI (Yet Another SPARQL GUI)](http://yasgui.org/) is an example of such an interface.
 <img src="yasgui.png" alt="YasGui">
-Therefore, lets try to use to query your data. Got to [yasgui.org](http://yasgui.org/) and run the default query 
- ```` sparql
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-SELECT * 
-WHERE {
-  ?sub ?pred ?obj .
-} 
-LIMIT 10    
-````
+Therefore, lets try to query data in your local instance of GraphDB from the page your are reading. 
+YasGui interface is deployed into this page. 
+
 against your endpoint: 
 <div id='yasgui'></div>  
 <script type="text/javascript">
