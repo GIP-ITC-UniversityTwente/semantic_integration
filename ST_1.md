@@ -33,8 +33,8 @@ In **CSV** this looks very simple:
 
 ```csv
 Name,Age,Place of birth
-Neil,33,Enschede
-Leelah,15,Utrecht
+Neil,2,Enschede
+Leela,5,Utrecht
 ```
 
 You can copy the example from above and paste it in a text file. 

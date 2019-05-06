@@ -46,6 +46,8 @@ The triple store can be installed in four steps as follows:
 - **Step 4.** Run GraphDB. The Web interface of the triple store is available at [http://localhost:7200/](http://localhost:7200/).
 
 ### 2.2 Test the installation <a name="test"></a>
+If you have GraphDB running at [http://localhost:7200/](http://localhost:7200/) then create 
+a test repository and run your first SPARQL query as follows:  
 
 - **Step 5.** Create a test repository. [See instructions on how to...](http://graphdb.ontotext.com/documentation/8.9/free/quick-start-guide.html#create-a-repository).
 - **Step 6.** Query the created repository. GraphDB automatically loads core vocabularies to 
@@ -59,10 +61,13 @@ a new repository. These can be queried. Therefore, select the created repository
       	?s ?p ?o .
      } limit 100      
 ````
-
-The query results will be rendered as a table. 
+If everything works fine you will see query results rendered as a table. 
 
 ### 2.3 Allow requests from other domains <a name="cors"></a>
+It is possible to run federated queries from the GraphDB Workbench. However, despite of the fact 
+that your GraphDB installed as a local service it can be access from the World Wide Web. The only thing to do is to 
+enable[Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) in your GraphDB. 
+Follow the next steps to open up your data to the world:
 
 - **Step 7.** Learn the endpoint address of your GraphDB. Go to *Setup* -> *Repositories* 
 and *copy repository URL to clipboard*. See the figure:
