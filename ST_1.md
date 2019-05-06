@@ -65,22 +65,22 @@ inconsistencies, convert it into RDF, and import it into a repository.
 Follow the tutorial on how [to upload data into OntoRefine](http://graphdb.ontotext.com/documentation/8.9/free/loading-data-using-ontorefine.html#what-s-in-this-document) 
 
 ### Step 2: Make an RDF representation of your table.  <a name="step2"></a>
-If you click RDF button in OntoRefine you will be able to see a RDFized version of the table. This is a proper 
+If you click RDF button in OntoRefine you will be able to see an RDFized version of the table. This is a proper 
 valid RDF where rows and columns from the table are mapped with the help of the following URIs:
 
-`mydata:Row` - the RDF type for each row;
-`mydata:rowNumber` - the property for row number as an integer literal;
-`mydata:<column_name>` - properties for each column
+- `mydata:Row` - the RDF type for each row;
+- `mydata:rowNumber` - the property for row number as an integer literal;
+- `mydata:<column_name>` - properties for each column
 
-Importing data in GraphDB
+### Step 2: Import RDF data in GraphDB.  <a name="step2"></a> 
 When you are satisfied with the transformation of your data, you can import it in 
-the current repository without leaving the GraphDB Workbench.
+the current repository without leaving the GraphDB Workbench. 
 
-Click Data -> Open in main SPARQL endpoint
+Click *Data* -> *Open in main SPARQL endpoint*
 
-The query is the same as the previous one only with the addition of a SERVICE clause. You only have to change CONSTRUCT to INSERT and remove the LIMIT. Instead of showing the RDF,
+The query is the same as the previous one only with the addition of a `SERVICE` clause. 
+You only have to change `CONSTRUCT` to `INSERT` and remove the `LIMIT`. Instead of showing the RDF,
  GraphDB will insert it into the current repository.
-
 
 ### Step 3: Make your RDF Linked Data <a name="step3"></a>
 
