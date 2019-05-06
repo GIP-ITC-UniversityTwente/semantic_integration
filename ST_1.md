@@ -101,14 +101,14 @@ it is not possible to link data to literal values in RDF. Therefore, in order to
  Therefore, we need to substitute literal values of places with relevant URIs from Wikidata. THis will link our data to Wikidata. 
  OntoRefine is able to help us with such linking. 
  
- In ontorefine select dropdown menue for the place of birth column and click reconsile -> start reconsilitation as follows: 
+ In ontorefine select drop down menu for the place of birth column and 
+ click *Reconcile* -> *Start reconciling...* as follows: 
  
  <img src="recon.png" alt="reconciliation">
  
- Select service - Wikidata(en)
- 
- 
- 
+ Select a service from the left to be used for reconciliation. 
+ This will trigger literal matching between the data in Wikidata and your data. 
+
 
 
 ### Step 5: Do it Yourself! <a name="step5"></a>
