@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Assignment Day 1: Create RDF"
+title:  "Assignment Day 1: Query Linked Data"
 subtitle: "Moving from the 3rd star"
 ---
 
