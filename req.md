@@ -29,13 +29,14 @@ This architecture is depicted in the figure below.
 ## 2. Backend: Triplesore. <a name="backend"></a>
 Databases built for the storage and retrieval of triples using semantic queries are called triplestores. 
 The list of existing implementation is quite impressive and includes about 50 different solutions. 
+
+<img src="graphdb_logo.png" alt="GraphDB">
+
 For tutorial we will install and use **[GraphDB](https://www.ontotext.com/products/graphdb/)**, 
 developed by [Ontotext](https://www.ontotext.com/), because it has: 
 - a lovely Graphical User Interface
 - a support of [geoSPARQL](http://graphdb.ontotext.com/documentation/free/geosparql-support.html)
 - a free version
-
-<img src="graphdb_logo.png" alt="GraphDB">
 
 ### 2.1 Installation of GraphDB. <a name="graphdb"></a>
 The triple store can be installed in four steps as follows:
