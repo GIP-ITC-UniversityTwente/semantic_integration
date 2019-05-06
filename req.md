@@ -4,6 +4,9 @@ title:  "Requirements"
 subtitle: "before you start"
 ---
 
+<link href='https://cdn.jsdelivr.net/npm/yasgui@2.7.29/dist/yasgui.min.css' rel='stylesheet' type='text/css'/>
+<script src='https://cdn.jsdelivr.net/npm/yasgui@2.7.29/dist/yasgui.min.js'></script>
+
 Tutorials and assignments of this course require installation of some tools 
 to recreate a common architecture of Linked Data applications. 
 
@@ -87,11 +90,8 @@ and *copy repository URL to clipboard*. See the figure:
   
 - **Step 8.**  Query your data from outside. You can use external query interfaces to query your data using the repository URL. 
 [YASGUI (Yet Another SPARQL GUI)](http://yasgui.org/) is an example of such an interface.
-
 <img src="yasgui.png" alt="YasGui">
-
 Therefore, lets try to use to query your data. Got to [yasgui.org](http://yasgui.org/) and run the default query 
-
  ```` sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -101,15 +101,18 @@ WHERE {
 } 
 LIMIT 10    
 ````
-
 against your endpoint:
-
 <img src="yasgui_anat_red.png" alt="YasGI interface">
 
-
-
-
-
+<div id='yasgui'></div>
+<script type="text/javascript">
+    var yasgui = YASGUI(document.getElementById("yasgui"), {
+        //Uncomment below to change the default endpoint
+        //Note: If you've already opened the YASGUI page before, you should first clear your
+        //local-storage cache before you will see the changes taking effect
+        //yasqe:{sparql:{endpoint:'bla'}}
+    });
+</script>
 
 
 <img src="graphdb_logfile.png" alt="GraphDB console">
