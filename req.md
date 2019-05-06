@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Requirements"
+title:  "Prerequisites"
 subtitle: "before you start"
 ---
 
