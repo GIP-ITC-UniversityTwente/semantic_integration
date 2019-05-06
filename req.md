@@ -21,7 +21,7 @@ to recreate a common architecture of Linked Data applications.
 
 ---------------
 
-## The triplestore. <a name="backend"></a>
+## The triplestore <a name="backend"></a>
 Databases built for the storage and retrieval of triples using semantic queries are called triplestores. 
 The list of existing implementation is quite impressive and includes about 50 different solutions. 
 
@@ -33,7 +33,7 @@ developed by [Ontotext](https://www.ontotext.com/), because it has:
 - a support of [geoSPARQL](http://graphdb.ontotext.com/documentation/free/geosparql-support.html)
 - a free version
 
-## Installation of GraphDB. <a name="graphdb"></a>
+## Installation of GraphDB <a name="graphdb"></a>
 The triple store can be installed in four steps as follows:
 
 - **Step 1.** Go to the [page of GraphDB](https://www.ontotext.com/products/graphdb/) to get a free copy of the software.
@@ -102,17 +102,16 @@ provide the address of the endpoint (  `http://localhost:720/repositories/test`)
     });
 </script>
 
-If you are able to see the results of the query then congrutulation, you are done with all the prerequsits. 
+If you are able to see the results of the query then congratulation, you are done with all the prerequisite. 
+
 If you see something like:
-
 <img src="CORS_NO.png" alt="CORS_NO">
-
 Then follow the next step. 
 
 - **Step 9.**  Enable the [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS). 
 Open the settings window of GraphDB by double-clicking the GraphDB icon in the system tray. 
-Enable the CORS support by running the command `-Dgraphdb.workbench.cors.enable=true` . Click *Save and Restart*.
-
+Enable the CORS support by running the command `-Dgraphdb.workbench.cors.enable=true` . 
+Click *Save and Restart*. 
  <img src="CORS_YES.png" alt="CORS_YES">
 
 Try to query the data via YasGUI as described in [**Step 8**](#step8).
