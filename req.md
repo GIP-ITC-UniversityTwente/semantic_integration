@@ -67,8 +67,8 @@ If everything works fine you will see query results rendered as a table.
 ### 2.3 Allow requests from other domains <a name="cors"></a>
 It is possible to run federated queries from the GraphDB Workbench. However, despite of the fact 
 that your GraphDB installed as a local service it can be access from the World Wide Web. The only thing to do is to 
-enable[Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) in your GraphDB. 
-Follow the next steps to open up your data to the world:
+enable the [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) in your GraphDB. 
+Follow the next few steps to open up your data to the world:
 
 - **Step 7.** Learn the endpoint address of your GraphDB. Go to *Setup* -> *Repositories* 
 and *copy repository URL to clipboard*. See the figure:
@@ -83,9 +83,31 @@ and *copy repository URL to clipboard*. See the figure:
   ```
   
   Such a repository URL can be used to query local data from external Web pages via SPARQL protocol
-  which makes it a part of the Web of Data.  
+  which makes it a part of the Web of Data. The URL is generated automatically every time you restart GraphDB. 
   
-- **Step 8.** 
+- **Step 8.**  Query your data from outside. You can use external query interfaces to query your data using the repository URL. 
+[YASGUI (Yet Another SPARQL GUI)](http://yasgui.org/) is an example of such an interface.
+
+<img src="yasgui.png" alt="YasGui">
+
+Therefore, lets try to use to query your data. Got to [yasgui.org](http://yasgui.org/) and run the default query 
+
+ ```` sparql
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT * 
+WHERE {
+  ?sub ?pred ?obj .
+} 
+LIMIT 10    
+````
+
+against your endpoint:
+
+<img src="yasgui_anat_red.png" alt="YasGI interface">
+
+
+
 
 
 
