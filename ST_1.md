@@ -13,12 +13,14 @@ will be converted into Linked Data and stored in GraphDB.
 
 ## Content
 ---
+
 - [Step 0: Let’s make a table](#step0)
 - [Step 1: Upload Data via OntoRefine](#step1)
 - [Step 2: Make an RDF representation of your table](#step2)
 - [Step 3: Import RDF data in GraphDB](#step3)
 - [Step 4: Make your RDF Linked Data](#step4)
 - [Step 5: Do it yourself](#step5)
+
 ---------------
 
 **Comma-separated values (CSV)** is a widespread format for spreadsheets and simple databases.
