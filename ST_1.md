@@ -77,7 +77,7 @@ valid RDF where rows and columns from the table are mapped with the help of the 
 When you are satisfied with the transformation of your data, you can import it in 
 the current repository without leaving the GraphDB Workbench. 
 
-Click *Data* -> *Open in main SPARQL endpoint*
+Click *Data* -> *Generate CONSTRUCT* , then *Data* -> *Open in main SPARQL endpoint*
 
 The query is the same as the previous one only with the addition of a `SERVICE` clause. 
 You only have to change `CONSTRUCT` to `INSERT` and remove the `LIMIT`. Instead of showing the RDF,
