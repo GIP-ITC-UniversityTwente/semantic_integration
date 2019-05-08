@@ -1,12 +1,38 @@
+---
+layout: page
+title:  "Assignment Day 2: Query Linked Data"
+subtitle: "start talk in SPARQL"
+---
 
-## Create the data
- 
-  <div id='yasgui'></div>
-  <script type="text/javascript">
-      var yasgui = YASGUI(document.getElementById("yasgui"), {
-          //Uncomment below to change the default endpoint
-          //Note: If you've already opened the YASGUI page before, you should first clear your
-          //local-storage cache before you will see the changes taking effect
-          //yasqe:{sparql:{endpoint:'bla'}}
-      });
-  </script> 
+In this tutorial you will learn how to query Linked Data you have created.
+[SPARQL](https://www.PAw3.org/TR/sparql11-query/) is the query language for the Semantic Web and Linked Data.
+SPARQL is very expressive and capable of federated querying. The former allows constructing complex queries when
+the latter gives possibility to query more than one repository on runtime.
+As a consequence, it is dead easy to make a query that crashes any repository. 
+Therefore, make sure that your queries don't multiply everything by everything.
+
+---------------
+
+## Content
+---
+- [1. Use Limit](#limit)
+- [2. Step 1](#step1)
+
+--------------
+
+## Use LIMIT  <a name="limit"></a>
+
+However, even though most of the repositories set limitations on query runtime and the number
+of output triples to protect the service, it is a good practice to use ***LIMIT*** keyword in your queries to limit number of triples that triple store returns.
+Using ***LIMIT*** will increase your performance of query development because you
+will not waste time waiting while a triplestore sends back millions of triples that you don't
+need for development.
+
+For example, the default query with a limit set to 100 will retrieve only first 100 solutions:
+
+```SPARQL
+SELECT ?s ?p ?o
+{?s ?p ?o}
+Limit 100
+
+```

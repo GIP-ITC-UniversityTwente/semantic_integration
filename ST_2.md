@@ -1,7 +1,7 @@
 ---
 layout: page
-title:  "Assignment Day 1: Query Linked Data"
-subtitle: "Moving from the 3rd star"
+title:  "Assignment Day 2: Semantic transformation of RDF data"
+subtitle: "Make your data great again"
 ---
 
 In this tutorial you will learn how to query Linked Data you have created.
@@ -22,17 +22,3 @@ Therefore, make sure that your queries don't multiply everything by everything.
 
 ## Use LIMIT  <a name="limit"></a>
 
-However, even though most of the repositories set limitations on query runtime and the number
-of output triples to protect the service, it is a good practice to use ***LIMIT*** keyword in your queries to limit number of triples that triple store returns.
-Using ***LIMIT*** will increase your performance of query development because you
-will not waste time waiting while a triplestore sends back millions of triples that you don't
-need for development.
-
-For example, the default query with a limit set to 100 will retrieve only first 100 solutions:
-
-```SPARQL
-SELECT ?s ?p ?o
-{?s ?p ?o}
-Limit 100
-
-```
