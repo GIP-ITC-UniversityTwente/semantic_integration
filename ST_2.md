@@ -47,11 +47,17 @@ From the figure below you can see that it consists of four main elements as foll
 3. query result set
 4.  buttons to control the visualisation of the query results. 
 
-The *run* button executes the query given in the *query form* against the endpoint specified 
+The *run* button executes the query given in the *query form* against the SPARQL endpoint specified 
 in the *endpoint selector*. The results of the query are rendered in the *query result set*
  using visualisation technique from a number of *visualisation options*. 
 
 ![YasGUI Query interface](yasgui_anat_red.png)
+
+
+<div class="alert alert-info txt" role="alert">
+  <h2>Tips</h2>
+  <p>Because the data being returning here is numerical, the 'Google Chart' option is used by default. The chart can be customised by clicking on the 'config chart' button on the right.</p>
+</div>
 
 By default the query interface is aimed at the SPARQL endpoint of <http://virtuoso.almere.pilod.nl:8890/sparql> .
 The initial query in the Query form retrieves everything from that endpoint.
@@ -67,7 +73,8 @@ If you click the run button you will have **all the triples** available in a tri
 
 The dataset selector focuses the query only on one dataset.
 In the world of Linked Data datasets are represented as named graphs,
-therefore selecting a dataset will add the **GRAPH** keyword that allows to specify which graph to query within a triple store.
+therefore selecting a dataset will add the **GRAPH** keyword that allows to specify which 
+graph to query within a triple store.
 For example, the following query will retrieve all the triples from the graph with URI
 <http://linkdale.org/data/test> :
 
