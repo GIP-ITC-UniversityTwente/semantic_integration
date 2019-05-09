@@ -30,7 +30,7 @@ Therefore, make sure that your queries don't multiply everything by everything.
 
 ### Prerequisite: Load the Data   <a name="#ltb"></a>
 
-Before we can start the tutorial we need to obtain the data and to upload in into the triplestore.  
+Before we can start the tutorial we need to obtain the data and to upload it into the triplestore.  
 We will use data from the LivingTextbook, namely data from your study areas. 
 Therefore, the first step is to download an RDF-version of your study area data. 
 
