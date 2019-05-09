@@ -39,10 +39,14 @@ Limit 100
 
 ### Query interface   <a name="#yasgui"></a>
 
-For this tutorial we will use the [YasGUI](http://yasgui.org/) SPARQL query interface. 
-It has quite typical appearance for such interfaces. From the figure below you can see that it 
-consists of four main elements: *endpoint selector*, *query form*, *query result set* and a raw of 
-*buttons to control the visualisation* of the query results. 
+For this tutorial we will use the [YasGUI: Yet Another SPARQL Graphical User Interface](http://yasgui.org/). 
+It has quite common appearance for such interfaces. 
+From the figure below you can see that it consists of four main elements as follows:
+1. endpoint selector
+2. query form
+3. query result set
+4.  buttons to control the visualisation of the query results. 
+
 The *run* button executes the query given in the *query form* against the endpoint specified 
 in the *endpoint selector*. The results of the query are rendered in the *query result set*
  using visualisation technique from a number of *visualisation options*. 
