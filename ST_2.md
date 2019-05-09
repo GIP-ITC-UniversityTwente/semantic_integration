@@ -18,12 +18,40 @@ Therefore, make sure that your queries don't multiply everything by everything.
 
 ## Content
 ---
+- [Prerequisite: Load the Data](#ltb)
+  - [Step 1. Download the content of a study area as RDF](#step1)
+  - [Step 2. Change file extension](#step2)
+  - [Step 3. Create a new repository](#step3)
+  - [Step 4. Upload the data into the repository](#step4)
 - [Query interface](#yasgui)
-- [Use Limit](#limit)
-- [2. Step 1](#step1)
+- [Some query examples](#examples)
 
 --------------
 
+### Prerequisite: Load the Data   <a name="#ltb"></a>
+
+Before we can start the tutorial we need to obtain the data and to upload in into the triplestore.  
+We will use data from the LivingTextbook, namely data from your study areas. 
+Therefore, the first step is to download an RDF-version of your study area data. 
+
+#### Step 1. Download the content of a study area as RDF. <a name="#step1"></a>
+Go to the dashboard of your study area and click *Data* -> *Export* . After that, on the download page you 
+will be able to specify the required *Export type* as *RDF (JSON-LD)* . [JSON-LD](https://json-ld.org/) is 
+one of the formats used for serialising RDF data. Other example formats 
+are [RDF/XML](https://www.w3.org/TR/rdf-syntax-grammar/), [Turtle](https://www.w3.org/TR/turtle/), 
+[N-triples](https://www.w3.org/TR/n-triples/) etc. Click the *Export* button to start downloading. 
+
+#### Step 2. Change file extension. <a name="#step2"></a>
+The downloaded file has **.json** extension. Before it can be loaded into GraphDB, the extension
+ needs to be changed to **.jsonld** . Rename the file, so it is **.jsonld** .
+ 
+#### Step 3. Create a new repository.  <a name="#step3"></a>
+Create a new repository with repository ID *ltb*. [See instructions on how to...](http://graphdb.ontotext.com/documentation/8.9/free/quick-start-guide.html#create-a-repository).
+
+#### Step 4. Upload the data into the repository. <a name="#step4"></a> 
+Make sure that *"ltb"* is your active repository. Then click *Import* -> *RDF*. 
+Chose *Upload rdf Files*  and provide the path to the your JSON-LD file that has extension **.jsonld**
+ 
 ### Query interface   <a name="#yasgui"></a>
 
 For this tutorial we will use the [YasGUI: Yet Another SPARQL Graphical User Interface](http://yasgui.org/). 
@@ -41,7 +69,7 @@ in the *endpoint selector*. The results of the query are rendered in the *query 
 ![YasGUI Query interface](yasgui_anat_red.png)
 
 <div style="color: #31708f; background-color: #d9edf7; border-color: #bce8f1; padding: 15px; margin-bottom: 20px; border: 1px solid transparent; border-radius: 4px;">
-  <h2 style="color: #31708f;">Tip</h2>
+  <h2 style="color: #31708f;">Important</h2>
   <p>Make sure that you use a correct endpoint address in the Endpoint Selector </p>
 </div>
 
@@ -59,7 +87,7 @@ LIMIT 10
 ```
 
 <div style="color: #31708f; background-color: #d9edf7; border-color: #bce8f1; padding: 15px; margin-bottom: 20px; border: 1px solid transparent; border-radius: 4px;">
-  <h2 style="color: #31708f;">Tip</h2>
+  <h2 style="color: #31708f;">Important</h2>
   <p>Even though most of the repositories set limitations on query runtime and the number
      of output triples to protect the service, it is a good practice to use <strong>LIMIT</strong> 
      keyword in your queries to limit number of triples that triple store returns.
@@ -77,18 +105,22 @@ Here we give very basic explanation and examples.
 Triple patterns are like RDF triples except that each of the subject, predicate and object
 may be a variable.
 
-In the default query a basic graph pattern is expressed as three variables  `?s ?p ?o` .
+In the default query a basic graph pattern is expressed as three variables  `?sub ?pred ?obj` .
 
 ```SPARQL
-SELECT ?s ?p ?o
-{
-  ?s ?p ?o
-}
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+} 
+LIMIT 10
+
 ```
 
-The first variable `?s` represents subject of a triple, `?p` is for a predicate and `?o` for a object.
+The first variable `?sub` represents the subject of a triple, `?pred` is for the predicate and `?obj` for the object.
 Such a triple pattern is valid for every triple in a triple store, therefore the result of the
-query will be all the triples.
+query will be 10 first triples since the **LIMIT** is set to 10. 
 
 Each of the variables in a triple pattern can be substitute with an RDF term.
 
