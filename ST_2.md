@@ -61,9 +61,9 @@ LIMIT 10
 <div style="color: #31708f; background-color: #d9edf7; border-color: #bce8f1; padding: 15px; margin-bottom: 20px; border: 1px solid transparent; border-radius: 4px;">
   <h2 style="color: #31708f;">Tip</h2>
   <p>Even though most of the repositories set limitations on query runtime and the number
-     of output triples to protect the service, it is a good practice to use <strong>LIMIT</strong 
+     of output triples to protect the service, it is a good practice to use <strong>LIMIT</strong> 
      keyword in your queries to limit number of triples that triple store returns.
-     Using <strong>LIMIT</strong will increase your performance of query development because you
+     Using <strong>LIMIT</strong> will increase your performance of query development because you
      will not waste time waiting while a triplestore sends back millions of triples that you don't
      need for development. </p>
 </div>
