@@ -18,27 +18,11 @@ Therefore, make sure that your queries don't multiply everything by everything.
 
 ## Content
 ---
-- [Use Limit](#limit)
 - [Query interface](#yasgui)
+- [Use Limit](#limit)
 - [2. Step 1](#step1)
 
 --------------
-
-## Use LIMIT  <a name="#limit"></a>
-
-Even though most of the repositories set limitations on query runtime and the number
-of output triples to protect the service, it is a good practice to use ***LIMIT*** keyword in your queries to limit number of triples that triple store returns.
-Using ***LIMIT*** will increase your performance of query development because you
-will not waste time waiting while a triplestore sends back millions of triples that you don't
-need for development.
-
-For example, the default query with a limit set to 100 will retrieve only first 100 triples:
-
-```SPARQL
-SELECT ?s ?p ?o
-{?s ?p ?o}
-Limit 100
-```
 
 ### Query interface   <a name="#yasgui"></a>
 
@@ -56,21 +40,24 @@ in the *endpoint selector*. The results of the query are rendered in the *query 
 
 ![YasGUI Query interface](yasgui_anat_red.png)
 
-
 <div style="color: #31708f; background-color: #d9edf7; border-color: #bce8f1; padding: 15px; margin-bottom: 20px; border: 1px solid transparent; border-radius: 4px;">
-  <h2 style="color: #31708f;">Tips</h2>
-  <p>Because the data being returning here is numerical, the 'Google Chart' option is used by default. The chart can be customised by clicking on the 'config chart' button on the right.</p>
+  <h2 style="color: #31708f;">Tip</h2>
+  <p>Make sure that you use correct endpoint address in the ENdpoint selector </p>
 </div>
 
-By default the query interface is aimed at the SPARQL endpoint of <http://virtuoso.almere.pilod.nl:8890/sparql> .
-The initial query in the Query form retrieves everything from that endpoint.
-This the query:
+By default the query form contains the following query which retrieves 10 triples from that endpoint:
+
 
 ```SPARQL
-SELECT ?s ?p ?o
-{?s ?p ?o}
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+} 
+LIMIT 10
 
 ```
+
 
 If you click the run button you will have **all the triples** available in a triple store.
 
@@ -87,4 +74,23 @@ WHERE {
   GRAPH <http://linkdale.org/data/test> {
     ?subject ?predicate ?object}
 }
+```
+
+
+
+
+## Use LIMIT  <a name="#limit"></a>
+
+Even though most of the repositories set limitations on query runtime and the number
+of output triples to protect the service, it is a good practice to use ***LIMIT*** keyword in your queries to limit number of triples that triple store returns.
+Using ***LIMIT*** will increase your performance of query development because you
+will not waste time waiting while a triplestore sends back millions of triples that you don't
+need for development.
+
+For example, the default query with a limit set to 100 will retrieve only first 100 triples:
+
+```SPARQL
+SELECT ?s ?p ?o
+{?s ?p ?o}
+Limit 100
 ```
