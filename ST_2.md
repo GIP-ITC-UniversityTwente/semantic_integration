@@ -52,7 +52,7 @@ Create a new repository with repository ID *ltb*. [See instructions on how to...
 Make sure that *"ltb"* is your active repository. Then click *Import* -> *RDF*. 
 Chose *Upload rdf Files*  and provide the path to the your JSON-LD file that has extension **.jsonld**
  
-### Query interface   <a name="#yasgui"></a>
+### Query interface <a name="#yasgui"></a>
 
 For this tutorial we will use the [YasGUI: Yet Another SPARQL Graphical User Interface](http://yasgui.org/). 
 It has quite common appearance for such interfaces. 
@@ -62,9 +62,9 @@ From the figure below you can see that it consists of four main elements as foll
 3. query result set
 4.  buttons to control the visualisation of the query results. 
 
-The *run* button executes the query given in the *query form* against the SPARQL endpoint specified 
-in the *endpoint selector*. The results of the query are rendered in the *query result set*
- using visualisation technique from a number of *visualisation options*. 
+The ***Run*** button executes the query given in the ***Query form*** against the SPARQL endpoint specified 
+in the ***Endpoint selector***. The results of the query are rendered in the ***Query result set***
+ using visualisation technique from a number of ***visualisation options***. 
 
 ![YasGUI Query interface](yasgui_anat_red.png)
 
