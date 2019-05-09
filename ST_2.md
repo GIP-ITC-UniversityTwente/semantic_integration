@@ -57,7 +57,7 @@ in the *endpoint selector*. The results of the query are rendered in the *query 
 ![YasGUI Query interface](yasgui_anat_red.png)
 
 
-<div class="alert alert-info txt" role="alert">
+<div style="color: #31708f; background-color: #d9edf7; border-color: #bce8f1; padding: 15px; margin-bottom: 20px; border: 1px solid transparent; border-radius: 4px;">
   <h2>Tips</h2>
   <p>Because the data being returning here is numerical, the 'Google Chart' option is used by default. The chart can be customised by clicking on the 'config chart' button on the right.</p>
 </div>
