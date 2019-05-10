@@ -275,5 +275,21 @@ DBpedia endpoint (`<https://dbpedia.org/sparql>`) with the cantent given after t
 The DBpedia endpoint processed the request and returned the results back 
 to `<http://localhost:7200/repositories/ltb>` and then, it was back in the browser.
 
-### ~~Reconciliation~~ Literal matching with SPARQL
+### ~~Reconciliation~~ Linking with SPARQL
 
+In the [step 4 of the Assignment Day 1: Create RDF](ST_1.md#step-4-make-your-rdf-data-linked-data-a-namestep4a)
+
+```SPARQL
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?sub ?label ?dbcon
+{ ?sub a skos:Concept .
+  ?sub rdfs:label ?label .
+  Service <http://dbpedia.org/sparql> {
+    ?dbcon a skos:Concept .
+    ?dbcon rdfs:label ?label .
+  }
+}
+LIMIT 1000
+```
