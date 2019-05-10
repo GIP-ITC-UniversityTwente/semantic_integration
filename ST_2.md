@@ -218,22 +218,32 @@ retrieves results identical to the long one.
 
 ### And their names
 
-Lets ask about the names of those people we found before. 
-We need to ad 1 additional triple pattern that retrieves the names of people using foaf:name:
+One can notice that since URIs do not provide useful information by themselves
+ there is not much value in the list of URIs that we retrieved in the previous section. 
+Therefore, let's ask about the labels of those concepts we found before. 
+There is a dedicated RDF relation that helps to link subjects to literal values representing
+names of things `<http://www.w3.org/2000/01/rdf-schema#label>` .
+
+We need to ad 1 additional triple pattern where the subject is the same as 
+in the first triple pattern (same variable `?sub`); predicate is 
+`<http://www.w3.org/2000/01/rdf-schema#label>` and object is a new variable `?label`.  
 
 ```SPARQL
-PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-SELECT ?s ?name
-{
-  ?s a foaf:Person.
-    ?s foaf:name ?name.
+SELECT ?sub ?label
+WHERE {
+  ?sub a skos:Concept .
+  ?sub rdfs:label ?label .
 }
-Limit 10
+LIMIT 10
 ```
 
-In the query, we specified a class of a variable (`?s a foaf:Person`) and we added additional triple pattern
-that asks for objects (`?name`) that are connected to ?s using foaf:name predicate (`?s foaf:name ?name`).
+In the query, we specified a class of a variable (`?sub a skos:Concept .`) 
+and we added an additional triple pattern that asks for objects (`?label`) 
+that are connected to `?sub` using `rdfs:label` predicate (`?s foaf:name ?name`). 
+Run the query in YasGui to see URIs and labels of the first 10 concepts. 
 
 ## Federation
 
