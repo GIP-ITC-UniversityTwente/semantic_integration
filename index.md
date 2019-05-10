@@ -18,6 +18,8 @@ technology and will generate your first Linked Data.
 2. [Prerequisites: Triple store](req.md)
 3. [Assignment Day 1 : Create RDF](ST_1.md)
 4. [Assignment Day 2: Query RDF data](ST_2.md)
-
+  - [Part 1: Load the Data](ST_2_1.md) 
+  - [Part 2: Basic SPARQL](ST_2_2.md) 
+  - [Part 3: the Assignment](ST_2_3.md) 
 
 
