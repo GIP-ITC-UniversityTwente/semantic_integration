@@ -275,16 +275,24 @@ DBpedia endpoint (`<https://dbpedia.org/sparql>`) with the cantent given after t
 The DBpedia endpoint processed the request and returned the results back 
 to `<http://localhost:7200/repositories/ltb>` and then, it was back in the browser.
 
-### ~~Reconciliation~~ Linking with SPARQL
+## ~~Reconciliation~~ Linking with SPARQL
 
 In the [step 4 of the Assignment Day 1: Create RDF](ST_1.md#step-4-make-your-rdf-data-linked-data-a-namestep4a)
+you used the interface of OntoRefine to reconcile the names of the cities against Wikidata data. 
+Such services rely on matching literal values between resources of a particular type (e.g municipality of 
+the Netherlands as in the [Assignment Day 1: Create RDF](ST_1.md)).
+Same functionality can be achieved with SPARQL.
+The query below does exactly the same but with LTB data. 
+It tries to match labels of concepts from the LTB data and concepts from DBpedia. 
 
 ```SPARQL
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT ?sub ?label ?dbcon
-{ ?sub a skos:Concept .
+{
+# these 2 pattern retrieve the label of cvoncepts in the  
+ ?sub a skos:Concept .
   ?sub rdfs:label ?label .
   Service <http://dbpedia.org/sparql> {
     ?dbcon a skos:Concept .
@@ -293,3 +301,7 @@ SELECT ?sub ?label ?dbcon
 }
 LIMIT 1000
 ```
+
+#### Assignment of the day: Accuracy of semantic integration 
+
+ 
