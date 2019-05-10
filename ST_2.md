@@ -269,11 +269,11 @@ Limit 10
 
 As it was stated above YasGui works with the endpoint specified in the ***Endpoint selector***.
 Therefore, all the queries is executed by that endpoint. 
-The query above was sent to `http://localhost:7200/repositories/ltb>`. 
-The endpoint precessed the query (found ***SERVICE*** keyword `SERVICE`) and sent another query to 
-DBpedia endpoint (`https://dbpedia.org/sparql`) specified after the ***SERVICE*** keyword. 
-The DBpedia endpoint processed the request and returned the results back to `http://localhost:7200/repositories/ltb` and then, 
-it was back in the browser.
+The query above was sent to `<http://localhost:7200/repositories/ltb>`. 
+The endpoint precessed the query (found `SERVICE` keyword ) and sent another query to 
+DBpedia endpoint (`<https://dbpedia.org/sparql>`) with the cantent given after the `SERVICE` keyword. 
+The DBpedia endpoint processed the request and returned the results back 
+to `<http://localhost:7200/repositories/ltb>` and then, it was back in the browser.
 
 ### ~~Reconciliation~~ Literal matching with SPARQL
 
