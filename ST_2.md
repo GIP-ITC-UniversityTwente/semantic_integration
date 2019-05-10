@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  "Assignment Day 2: Query RDF data"
-subtitle: "start talk in SPARQL"
+subtitle: "Start talk in SPARQL"
 ---
 
 <link href='https://cdn.jsdelivr.net/npm/yasgui@2.7.29/dist/yasgui.min.css' rel='stylesheet' type='text/css'/>
@@ -28,7 +28,7 @@ Therefore, make sure that your queries don't multiply everything by everything.
 
 --------------
 
-### Prerequisite: Load the Data   <a name="#ltb"></a>
+## Prerequisite: Load the Data   <a name="#ltb"></a>
 
 Before we can start the tutorial we need to obtain the data and to upload it into the triplestore.  
 We will use data from the LivingTextbook, namely data from your study areas. 
@@ -52,7 +52,7 @@ Create a new repository with repository ID *ltb*. [See instructions on how to...
 Make sure that *"ltb"* is your active repository. Then click ***Import*** -> ***RDF***. 
 Chose ***Upload rdf Files***  and provide the path to the your JSON-LD file that has extension **.jsonld**
  
-### Query interface <a name="#yasgui"></a>
+## Query interface <a name="#yasgui"></a>
 
 For this tutorial we will use the [YasGUI: Yet Another SPARQL Graphical User Interface](http://yasgui.org/). 
 It has quite common appearance for such interfaces. 
@@ -79,7 +79,8 @@ By default the query form contains the following query which retrieves 10 triple
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-SELECT * WHERE {
+SELECT * 
+WHERE {
   ?sub ?pred ?obj .
 } 
 LIMIT 10
@@ -96,7 +97,7 @@ LIMIT 10
      need for development. </p>
 </div>
 
-### Basic SPARQL query  <a name="#spo"></a>
+## Basic SPARQL query  <a name="#sparql"></a>
 
 It is advised to read [SPARQL documentation](https://www.w3.org/TR/sparql11-query/) to get good understanding of the query language.
 Here we give very basic explanation and examples.
@@ -111,7 +112,8 @@ In the default query a basic graph pattern is expressed as three variables  `?su
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-SELECT * WHERE {
+SELECT * 
+WHERE {
   ?sub ?pred ?obj .
 } 
 LIMIT 10
@@ -124,7 +126,7 @@ query will be 10 first triples since the **LIMIT** is set to 10.
 
 Each of the variables in a triple pattern can be substitute with an RDF term.
 
-### Useful information: classes and labels <a name="#class&label"></a>
+## Useful information: classes and labels <a name="#class&label"></a>
 
 [The third rule of linked data](https://www.w3.org/DesignIssues/LinkedData.html) stays:
 3. When someone looks up a URI, provide useful information, using the standards
@@ -136,7 +138,7 @@ topics, things—in a computer-processable way.
 In other words, things named with URIs can be described using this basic vocabulary. 
 A basic description always include information that answers two questions *"what is it"* and *"how is it called"*.
 
-#### What is it: a class <a name="#class"></a>
+### What is it: a class <a name="#class"></a>
 
 For example, consider a statement: "*Berlin is a city*" . 
 RDF provides a formal way to describe this:
@@ -156,8 +158,10 @@ People are encouraged to (re)use existing ontologies or to make their own.
 
 <div style="color: #31708f; background-color: #d9edf7; border-color: #bce8f1; padding: 15px; margin-bottom: 20px; border: 1px solid transparent; border-radius: 4px;">
   <h2 style="color: #31708f;">Important</h2>
-  <p>URIs do not provide meaningful information by themselves. The URI of `http://dbpedia.org/resource/Berlin`
-     does not say anything about what it is. Only information related to this URI describes the city of Berlin.
+  <p>URIs do not provide meaningful information by themselves. 
+     The URI of <i><http://dbpedia.org/resource/Berlin></i>
+     does not say anything about what it is. 
+     Only information related to this URI describes the city of Berlin.
      Most useful information is about the type of a thing and its label. </p>
 </div>
 
@@ -165,7 +169,7 @@ Therefore, one of the most useful relations in the world of RDF is
 `<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>` because it is used to state that a subject 
 of a triple belongs to a certain class of things expressed as an object. 
 
-#### First 10 of a class
+### First 10 of a class
 
 Therefore, let's retrieve any 10 concepts from your data. In the LivingTextbook, concepts are classified 
 using `	http://www.w3.org/2004/02/skos/core#Concept, a [term](https://www.w3.org/2009/08/skos-reference/skos.html#Concept) defined by 
@@ -212,9 +216,10 @@ In the query, a namespace prefix binding (skos) as well as keyword **a** are use
 the declaration of the pattern. Copy and run the shorten query to see that it
 retrieves results identical to the long one. 
 
-#### Their names
+### And their names
 
-Lets ask about the names of those people we found before. We need to ad 1 additional triple pattern that retrieves the names of people using foaf:name:
+Lets ask about the names of those people we found before. 
+We need to ad 1 additional triple pattern that retrieves the names of people using foaf:name:
 
 ```SPARQL
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
@@ -230,7 +235,7 @@ Limit 10
 In the query, we specified a class of a variable (`?s a foaf:Person`) and we added additional triple pattern
 that asks for objects (`?name`) that are connected to ?s using foaf:name predicate (`?s foaf:name ?name`).
 
-### Federation
+## Federation
 
 The [SPARQL specification](https://www.w3.org/TR/2013/REC-sparql11-federated-query-20130321/) states:
 
