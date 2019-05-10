@@ -256,19 +256,24 @@ SPARQL allows executing queries distributed over different SPARQL endpoints.
 The SERVICE keyword is used to support queries that merge data distributed across the Web.
 
 To put it short, federation makes it possible to query more than one endpoint at a time.
-Example below retrieves first 10 triples from DBpedia:
+For example, consider the query below. It retrieves first 10 triples from DBpedia:
 
 ```SPARQL
 SELECT ?s ?p ?o
   {
-    Service <http://dbpedia.org/sparql>
+    SERVICE <http://dbpedia.org/sparql>
       {?s ?p ?o}
   }
 Limit 10
 ```
 
-As it was stated above LinkDaLe works with the endpoint <http://viruoso.almere.pilod.nl/sparql>
-Therefore, all the queries is executed by that endpoint. The query above was sent
- to <http://virtuso.almere.pilod.nl/sparql> . The endpoint precessed the query (found ***SERVICE*** keyword) and
- sent another query to DBpedia endpoint specified after the ***SERVICE*** keyword. The DBpedia endpoint processed the request returned it to <http://virtuoso.almere.pilod.nl:8890/sparql> and then, it was back in the browser.
+As it was stated above YasGui works with the endpoint specified in the ***Endpoint selector***.
+Therefore, all the queries is executed by that endpoint. 
+The query above was sent to `http://localhost:7200/repositories/ltb>`. 
+The endpoint precessed the query (found ***SERVICE*** keyword `SERVICE`) and sent another query to 
+DBpedia endpoint (`https://dbpedia.org/sparql`) specified after the ***SERVICE*** keyword. 
+The DBpedia endpoint processed the request and returned the results back to `http://localhost:7200/repositories/ltb` and then, 
+it was back in the browser.
+
+### ~~Reconciliation~~ Literal matching with SPARQL
 
