@@ -24,16 +24,16 @@ where the query can be altered and rerun).
 
 ## Content
 ---
-- [Make a node in LTB "Data Story"](#table)
-- [Where are you from?](#draw)
+- [Make a node in LTB "Data Story"](#story)
+- [Where are you from?](#where)
 
 --------------
 
-## Make a node in LTB "Data Story".
+## Make a node in LTB "Data Story".  <a name="story"></a>
 First, create a concept dedicated to a data story in LTB. You will create a report 
 using this concept.
 
-## Where are you from?
+## Where are you from?  <a name="where"></a>
 Using YasGUI together with DBpedia data create a map that shows location of your home town.
 To create a map access location information based on the spelling of the name of your home town
 Explain steps taken to create the query in the field "How to" of LTB. 
@@ -56,3 +56,4 @@ Bonus points:
 | Query consists of no more than 2 triple patterns | 1 |
 | Use of native language in the hometown name| 1 | 
 
+## 
