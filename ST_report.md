@@ -34,10 +34,13 @@ First, create a concept dedicated to a data story in LTB. You will create a repo
 using this concept.
 
 ## Where are you from?  <a name="where"></a>
-Using YasGUI together with DBpedia data create a map that shows location of your home town.
-To create a map access location information based on the spelling of the name of your home town
+Using YasGUI together with DBpedia data create a map that would show
+ the location of your home town.
+To create such a map, you will need to access location information 
+(coordinates) based on the spelling of the name of your home town.
 Explain steps taken to create the query in the field "How to" of LTB. 
-Provide a shareable link to the query and the screen capture with the map.
+Provide a shareable link to the query (share button in YasGUI) 
+and the screen capture with the map.
 You will be graded as follows: 
 
 Deliverables: 
@@ -56,4 +59,10 @@ Bonus points:
 | Query consists of no more than 2 triple patterns | 1 |
 | Use of native language in the hometown name| 1 | 
 
-## 
+<div style="color: #31708f; background-color: #d9edf7; border-color: #bce8f1; padding: 15px; margin-bottom: 20px; border: 1px solid transparent; border-radius: 4px;">
+  <h2 style="color: #31708f;">Important</h2>
+  <p>YasGUI nativally accepts geographical coordinates 
+  in the WKT serialisation. Therefore, make sure that the you use 
+  geometry that looks like: <strong><i>POINT(long lat)</i></strong>
+  </p>
+</div>
