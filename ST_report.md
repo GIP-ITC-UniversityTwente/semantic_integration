@@ -39,7 +39,7 @@ Using YasGUI together with DBpedia data create a map that would show
 To create such a map, you will need to access location information 
 (coordinates) based on the spelling of the name of your home town.
 Explain steps taken to create the query in the field "How to" of LTB. 
-Provide a shareable link to the query (share button in YasGUI) 
+Provide a shareable link to the query (use the share button in YasGUI) 
 and the screen capture with the map.
 You will be graded as follows: 
 
