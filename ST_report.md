@@ -30,18 +30,29 @@ where the query can be altered and rerun).
 --------------
 
 ## Make a node in LTB "Data Story".
-First, create a dedicated concept about a data story  in LTB.
+First, create a concept dedicated to a data story in LTB. You will create a report 
+using this concept.
 
 ## Where are you from?
 Using YasGUI together with DBpedia data create a map that shows location of your home town.
 To create a map access location information based on the spelling of the name of your home town
-Explain steps taken to create the query. 
+Explain steps taken to create the query in the field "How to" of LTB. 
+Provide a shareable link to the query and the screen capture with the map.
+You will be graded as follows: 
 
-Grades: 
+Deliverables: 
 
 | Condition | Value (points) |
-| ---- | --- |
-| Map and link | 2 points |
-| Query consists of no more than 2 triple patterns | 2 points |
-| Use of native language in the hometown name| 2 points | 
+|: ---- |: --- :|
+| Shareable link from YasGUI | 0.5 |
+| Screen capture with the map | 0.5 |
+| Explanation of steps taken | 1  |
+
+
+Bonus points: 
+
+| Bonus condition | Value (points) |
+| ---- |: --- :|
+| Query consists of no more than 2 triple patterns | 1 |
+| Use of native language in the hometown name| 1 | 
 
