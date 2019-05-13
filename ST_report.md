@@ -38,6 +38,7 @@ To create a map access location information based on the spelling of the name of
 Explain steps taken to create the query. 
 
 Grades: 
+
 | Requirements | Value (points) |
 | ---- | --- |
 | Map and link | 2 points |
