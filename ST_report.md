@@ -1,7 +1,7 @@
 ---
 layout: page
-title:  "Assignment Day 3: Report"
-subtitle: "Make a Data Story about Semantic Integration"
+title:  "Assignment Day 3: Data Story"
+subtitle: "Report about Semantic Integration"
 ---
 
 In this tutorial you will build you own data story. 

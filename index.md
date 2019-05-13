@@ -19,5 +19,6 @@ technology and will generate your first Linked Data.
 3. [Assignment Day 1 : Create RDF](ST_1.md)
 4. [Assignment Day 2: Query RDF data](ST_2.md)
 4. [Assignment Day 2: Geospatial Linked Data](ST_2_2_.md)
+4. [Assignment Day 3: Data Story (report)](ST_report.md)
 
 
