@@ -39,13 +39,9 @@ Explain steps taken to create the query.
 
 Grades: 
 
-| Requirements | Value (points) |
+| Condition | Value (points) |
 | ---- | --- |
 | Map and link | 2 points |
 | Query consists of no more than 2 triple patterns | 2 points |
 | Use of native language in the hometown name| 2 points | 
-
-
-## 
-
 
