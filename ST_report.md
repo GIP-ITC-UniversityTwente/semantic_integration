@@ -62,7 +62,7 @@ Bonus points:
 <div style="color: #31708f; background-color: #d9edf7; border-color: #bce8f1; padding: 15px; margin-bottom: 20px; border: 1px solid transparent; border-radius: 4px;">
   <h2 style="color: #31708f;">Important</h2>
   <p>YasGUI nativally accepts geographical coordinates 
-  in the WKT serialisation. Therefore, make sure that the you use 
+  in the WKT serialisation. Therefore, make sure that you use 
   geometry that looks like: <strong><i>POINT(long lat)</i></strong>
   </p>
 </div>
