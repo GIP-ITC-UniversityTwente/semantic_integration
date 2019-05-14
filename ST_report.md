@@ -51,11 +51,9 @@ Deliverables:
 
 | Condition | Value (points) |
 |: ---- |: --- :|
-| Shareable link from YasGUI | 0.25 |
-| Screen capture with the map | 0.25 |
-| Explanation of steps taken | 0.5  |
-| Query consists of no more than 2 triple patterns | 0.5 |
-| Use of native language in the hometown name| 0.5 | 
+| Shareable link from YasGUI | 1 |
+| Screen capture with the map | 1 |
+| Explanation of steps taken | 2  |
 
 <div style="color: #31708f; background-color: #d9edf7; border-color: #bce8f1; padding: 15px; margin-bottom: 20px; border: 1px solid transparent; border-radius: 4px;">
   <h2 style="color: #31708f;">Important</h2>
