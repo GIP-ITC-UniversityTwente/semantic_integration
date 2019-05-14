@@ -35,7 +35,8 @@ where the query can be altered and rerun).
 
 
 - First, create a concept dedicated to a data story in LTB. You will create a report 
-using this concept.
+using this concept. Data Stories is a way to present information. Therefore, creating the concept
+ "Presentation" can help to relate the Data Stories concept to other concepts in LTB. 
 
 - Second, using YasGUI together with DBpedia data create a map that would show
  the location of your home town.
