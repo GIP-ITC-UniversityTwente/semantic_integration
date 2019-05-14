@@ -17,7 +17,7 @@ of Data Stories was introduced and developed by
 ## Content
 ---
 - [Data Stories](#story)
-- [Report part 3: Where you from?](#where)
+  - [Report part 3: Where you from?](#where)
 
 --------------
 
