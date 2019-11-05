@@ -4,6 +4,8 @@ title:  "Semantic Integration 2019"
 ---
 
 
+
+
 <img src="tut1.png" alt="Linked Data">
 
 **Linked Data** is a method of publishing structured data so that it 
