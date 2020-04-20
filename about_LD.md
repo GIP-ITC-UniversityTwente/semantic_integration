@@ -6,7 +6,7 @@ subtitle: "Linked data principles"
 
 Linked Data is a method of publishing structured data so that it can be linked and queried.
 It is built on the Semantic Web technology, and is driven by open standards set by the World
-Wide Web Consortium (W3C). The term was  invented by [Sir Tim Berners-Lee](https://pdfs.semanticscholar.org/566c/1c6bd366b4c9e07fc37eb372771690d5ba31.pdf) who also set [the four
+Wide Web Consortium (W3C). The term was  invented by [Sir Tim Berners-Lee](https://en.wikipedia.org/wiki/Tim_Berners-Lee) who also set [the four
 design rules]((https://www.w3.org/DesignIssues/LinkedData.html)) that are often used to define linked data. They are as follows:
 
 1. Use [URIs](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) as names for things
@@ -30,7 +30,7 @@ serializations of RDF, but XML-based is the most common format.
 ![Triple is a basic building block to structure data on the Semantic Web.](about_ld_1.png)
 
 It consists of a subject expressed as a URI, predicate (also URI) and an object
-that can be either a liter or a URI. "/>
+that can be either a liter or a URI.
 
 The figure above shows an example triple representing a simple fact that an object registered in the key
 registry of topography (BRT) with the number 117763908 is a church (kerk in Dutch). The first part
