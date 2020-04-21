@@ -1,10 +1,10 @@
 ---
 layout: page
-title:  "Assignment Day 2: Geospatial Linked Data"
+title:  "Assignment: Geospatial Linked Data"
 subtitle: "Report part 1 & 2"
 ---
 
-<img src="gld.png" alt="Geospatial Linked Data">
+
 
 ---------------
 
@@ -13,7 +13,7 @@ subtitle: "Report part 1 & 2"
 
 - [Ontologies](#onto)
   - [Report part 1: You will LOV it!](#lov)
-- [Sources](#sources)
+- [Sources of Linked Data](#sources)
   - [Report part 2: a-LOD of Geo Data](#lodv)
 
 --------------
@@ -58,7 +58,7 @@ service. Fill the table as follows and save it as "Examples" of ontologies in yo
 
 You will get 2 points for this part of the report. 
 
-## Sources <a name="sources"></a>
+## Sources of Linked Data <a name="sources"></a>
 
 Linked Data initiatives promote the adoption of semantic formats. 
 This has enabled users to publish structured data online creating a 

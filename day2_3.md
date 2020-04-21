@@ -1,7 +1,7 @@
 ---
 layout: page
-title:  "Assignment Day 2: Part 3"
-subtitle: "the Assignment"
+title:  "Assignment: Semantic Integration"
+subtitle: "classes and labels"
 ---
 
 ---------------
@@ -11,9 +11,9 @@ subtitle: "the Assignment"
 
 - [Federation](#fed)
 - [Linking with SPARQL](#recon)
-  - [Assignment Day 2: Accuracy of semantic integration ](#ass1)
-    - [Assignment Day 2: Part A](#partA)
-    - [Assignment Day 2: Part B](#partB)
+  - [Assignment: Semantic Integration](#ass1)
+    - [Part A](#partA)
+    - [Part B](#partB)
 
 --------------
 ## Federation <a name="fed"></a>
@@ -52,10 +52,10 @@ Try it yourself! Copy the query and Run it.
 
 ## Linking with SPARQL <a name="recon"></a>
 
-In the [step 4 of the Assignment Day 1: Create RDF](ST_1.md#step4)
+In the [step 4 of Tutorial: Create some RDF data](day1_2.md#step4)
 you used the interface of OntoRefine to reconcile the names of the cities against Wikidata data. 
 Such services rely on matching literal values between resources of a particular type (e.g municipality of 
-the Netherlands as in the [Assignment Day 1: Create RDF](ST_1.md)).
+the Netherlands as in the [Tutorial: Create some RDF data](day1_2.md)).
 Same functionality can be achieved with SPARQL.
 The query below does exactly the same but with LTB data. 
 It tries to match labels of concepts from the LTB data and concepts from DBpedia. 
@@ -94,7 +94,7 @@ LIMIT 1000
 Copy the query and run it with YasGui. 
 
 
-### Assignment Day 2: Accuracy of semantic integration <a name="ass1"></a>
+### Assignment: Semantic Integration <a name="ass1"></a>
 
 Change the query below in such a way that it provides the greatest number of results with the 
 most accurate semantic matching. In other words, you are asked to find such a combination of class declarations (can be more than one)
@@ -116,10 +116,10 @@ SELECT ?sub ?label ?dbcon
 LIMIT 1000
 ```
 
-- Assignment Day 2: Part A.  <a name="partA"></a> Choose 5 concepts from DBpedia that in your opinion have the best match. 
+- Part A.  <a name="partA"></a> Choose 5 concepts from DBpedia that in your opinion have the best match. 
 Add them to your LTB study area (create) and link them to matching concepts using relation "same as". 
-To denote that those concept belong to DBpedia put `DBpedia:` before the name of the concept and 
+To denote that those concepts belong to DBpedia put `DBpedia:` before their names and 
 copy the concept URL into the "External resources" field in LTB.
 
-- Assignment Day 2: Part B.  <a name="partB"></a> Add concepts that represent DBpedia classes used in the query. 
-Link them to the 5 DBpedia concepts created in the Assignment Day 2: Part A using "is a kind of" relation.  
+- Part B.  <a name="partB"></a> Add concepts that represent DBpedia classes used in the query. 
+Link them to the 5 DBpedia concepts created in Part A using "is a kind of" relation. 

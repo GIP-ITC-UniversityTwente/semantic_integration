@@ -1,16 +1,15 @@
 ---
 layout: page
-title:  "Assignment Day 3: Data Story"
+title:  "Assignment: Data Story"
 subtitle: "Report part 3"
 ---
 
-In this tutorial you will build you own data story. 
+In this assignment you will build your own data story.
 Since Linked Data is a relatively new technology for most users, many of them are
-unaware of the potential that can be unlocked. To bridge the gap between (a) the
-vast but implicit potential that a Linked Dataset encapsulates, and (b) the specific
-and often more explicit use cases a prototypical user may have in mind. The concept
-of Data Stories was introduced and developed by 
-[Folmer and Beek (2017)](https://scholarworks.umass.edu/foss4g/vol17/iss1/23/). 
+unaware of the potential that can be unlocked. The concept of [data story](https://ris.utwente.nl/ws/files/76803233/isprs_archives_XLII_4_W8_49_2018.pdf) was introduced 
+to bridge two gaps as follows: 
+ 1. the vast but implicit potential that a Linked Dataset encapsulates
+ 2. the specific and often more explicit use cases a prototypical user may have in mind 
 
 ---------------
 

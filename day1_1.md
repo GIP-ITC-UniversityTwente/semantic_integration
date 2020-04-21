@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Prerequisites"
+title:  "Tutorial: a triplestore"
 subtitle: "before you start"
 ---
 

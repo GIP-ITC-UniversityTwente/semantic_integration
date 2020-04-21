@@ -1,7 +1,7 @@
 ---
 layout: page
-title:  "Assignment Day 2: Part 1"
-subtitle: "Load LTB Data"
+title:  "Tutorial: Load LTB Data"
+subtitle: "exploration of Linked Data"
 ---
 
 ---------------

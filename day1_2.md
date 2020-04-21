@@ -1,7 +1,7 @@
 ---
 layout: page
-title:  "Assignment Day 1: Create RDF"
-subtitle: "Moving from the 3rd star"
+title:  "Tutorial: Create some RDF data"
+subtitle: "moving from the 3rd star"
 ---
 
 In this tutorial you will learn how to create Linked Data representation of a 
@@ -118,6 +118,7 @@ of birth instead pf literal values. Your data is linked now!
 
 ### Step 5: Do it Yourself! <a name="step5"></a>
 Repeat the steps of this tutorial but use your own data with your real name, age and your place of birth. 
+You will need these data later in the course. 
 
 
 

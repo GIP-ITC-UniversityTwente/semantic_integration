@@ -15,10 +15,9 @@ technology and will generate your first Linked Data.
 ## Content
 ---
 1. [About Linked Data](about_LD.md)
-2. [Prerequisites: Triple store](req.md)
-3. [Assignment Day 1 : Create RDF](ST_1.md)
-4. [Assignment Day 2: Query RDF data](ST_2.md)
-4. [Assignment Day 2: Geospatial Linked Data (report part 1 and 2)](ST_2_2_.md)
-4. [Assignment Day 3: Data Story (report part 3)](ST_report.md)
+2. [Day 1: Your first RDF](day1_index.md)
+3. [Day 2: Query data](day2_index.md)
+4. [Day 3: Geospatial Linked Data](day3_index.md)
+
 
 

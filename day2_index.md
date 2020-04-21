@@ -1,7 +1,7 @@
 ---
 layout: page
-title:  "Assignment Day 2: Query RDF data"
-subtitle: "Start talk in SPARQL"
+title:  "Day 2: Query RDF data"
+subtitle: "Start talking SPARQL"
 ---
 
 In this tutorial you will learn how to query Linked Data. 
@@ -15,8 +15,8 @@ Therefore, make sure that your queries don't multiply everything by everything.
 
 ## Content
 ---
-- [Part 1: Load LTB Data](ST_2_1.md) 
-- [Part 2: Basic SPARQL](ST_2_2.md) 
-- [Part 3: the Assignment](ST_2_3.md) 
+- [Tutorial: Load LTB Data](day2_1.md) 
+- [Tutorial: Basic SPARQL](day2_2.md) 
+- [Assignment: Semantic Integration](day2_3.md) 
 
 --------------

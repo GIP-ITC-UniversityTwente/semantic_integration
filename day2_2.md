@@ -1,7 +1,7 @@
 ---
 layout: page
-title:  "Assignment Day 2: Part 2"
-subtitle: "Basic SPARQL"
+title:  "Tutorial: Basic SPARQL"
+subtitle: "an RDF Query Language"
 ---
 
 ---------------
@@ -25,7 +25,7 @@ From the figure below you can see that it consists of four main elements as foll
 1. endpoint selector
 2. query form
 3. query result set
-4.  buttons to control the visualisation of the query results. 
+4. buttons to control the visualisation of the query results. 
 
 The ***Run*** button executes the query given in the ***Query form*** against the SPARQL endpoint specified 
 in the ***Endpoint selector***. The results of the query are rendered in the ***Query result set***
@@ -40,7 +40,7 @@ in the ***Endpoint selector***. The results of the query are rendered in the ***
 
 By default the query form contains the following query which retrieves 10 triples from an endpoint:
 
-```SPARQL
+```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
@@ -73,7 +73,7 @@ may be a variable.
 
 In the default query a basic graph pattern is expressed as three variables  `?sub ?pred ?obj` .
 
-```SPARQL
+```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
@@ -155,7 +155,7 @@ and an object is the class `<http://www.w3.org/2004/02/skos/core#Concept>`.
 
 Therefore the query will be:
 
-```SPARQL
+```sparql
 SELECT ?sub 
 WHERE {
   ?sub <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept>.
@@ -168,7 +168,7 @@ Copy this query and run it in YasGUI.
 SPARQL allows shortenning queries to improve clarity and readability .  
 The same query can be written as follows:
 
-```SPARQL
+```sparql
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
 SELECT ?sub 
@@ -193,7 +193,7 @@ We need to ad 1 additional triple pattern where the subject is the same as
 in the first triple pattern (same variable `?sub`); predicate is 
 `<http://www.w3.org/2000/01/rdf-schema#label>` and object is a new variable `?label`.  
 
-```SPARQL
+```sparql
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
