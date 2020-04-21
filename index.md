@@ -1,6 +1,6 @@
 ---
 layout: landing
-title:  "Semantic Integration 2019"
+title:  "Semantic Integration 2020"
 ---
 
 <link href='https://cdn.jsdelivr.net/npm/yasgui@2.7.29/dist/yasgui.min.css' rel='stylesheet' type='text/css'/>
