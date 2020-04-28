@@ -65,7 +65,7 @@ The supported formats are TSV, CSV, *SV, XLS, XLSX, JSON, XML, RDF as XML,
 and Google sheet. Using OntoRefine, you can easily filter your data, edit its 
 inconsistencies, convert it into RDF, and import it into a repository.
 
-Follow the tutorial on how [to upload data into OntoRefine](http://graphdb.ontotext.com/documentation/8.9/free/loading-data-using-ontorefine.html#what-s-in-this-document) 
+Follow the tutorial on how [to upload data into OntoRefine](http://graphdb.ontotext.com/documentation/9.2/free/loading-data-using-ontorefine.html#what-s-in-this-document) 
 
 ### Step 2: Make an RDF representation of your table.  <a name="step2"></a>
 If you click *RDF* button in OntoRefine you will be able to see an RDFized version of the table. This is a proper 
