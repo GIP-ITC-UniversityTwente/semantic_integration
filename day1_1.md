@@ -38,7 +38,7 @@ The triple store can be installed in four steps as follows:
 
 - **Step 1.** Go to the [page of GraphDB](https://www.ontotext.com/products/graphdb/graphdb-free/) to get a free copy of the software.
 - **Step 2.** Fill the form and request a link to your copy of the software. You should receive a email with download links. 
-- **Step 3.** Download and install a desktop version of the software for your platform (see [quick start quid](http://graphdb.ontotext.com/documentation/8.9/free/quick-start-guide.html#run-graphdb-as-a-desktop-installation)).   
+- **Step 3.** Download and install a desktop version of the software for your platform (see [quick start quide](http://graphdb.ontotext.com/documentation/8.9/free/quick-start-guide.html#run-graphdb-as-a-desktop-installation)).   
 - **Step 4.** Run GraphDB. The Web interface of the triple store is available at [http://localhost:7200/](http://localhost:7200/).
 
 ## Test the installation <a name="test"></a>
