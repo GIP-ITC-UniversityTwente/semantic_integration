@@ -7,7 +7,7 @@ subtitle: "Linked data principles"
 Linked Data is a method of publishing structured data so that it can be linked and queried.
 It is built on the Semantic Web technology, and is driven by open standards set by the World
 Wide Web Consortium (W3C). The term was  invented by [Sir Tim Berners-Lee](https://en.wikipedia.org/wiki/Tim_Berners-Lee) who also set [the four
-design rules]((https://www.w3.org/DesignIssues/LinkedData.html)) that are often used to define linked data. They are as follows:
+design rules](https://www.w3.org/DesignIssues/LinkedData.html) that are often used to define linked data. They are as follows:
 
 1. Use [URIs](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) as names for things
 2. Use HTTP URIs so that people can look up those names
@@ -62,7 +62,7 @@ However, even though the computers can read the tables, it is not possible for t
 To enable reasoning, a formal representation of the concepts and relations used in the data should be decoupled from
 the data structure . The RDF data model together with ontologies provides means for capturing formal semantics independently
 from the data structure. As can be seen from the Figure, the table resulted in two triples one about the fact that the building
-is a church (kerk) and the other one says the year of constructions (bouwjaar means “year of construction” in Dutch).
+is a church (kerk) and the other one says the year of constructions (*bouwjaar* means “year of construction” in Dutch).
 The URIs used in the triple explicitly define unique identifications for types and relations between data items.
 The Linked RDF, in the Figure, has an additional third triple that states that the registered building is the
 same building as described in DBpedia  (owl:sameAs is used). This makes the Linked Data linked.
