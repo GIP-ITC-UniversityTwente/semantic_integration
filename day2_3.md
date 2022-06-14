@@ -32,7 +32,7 @@ For example, consider the query below. It retrieves first 10 triples from DBpedi
 ```SPARQL
 SELECT ?s ?p ?o
   {
-    SERVICE <http://dbpedia.org/sparql>
+    SERVICE <https://dbpedia.org/sparql>
       {?s ?p ?o}
   }
 Limit 10
@@ -66,29 +66,32 @@ invisible for the query processor.
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-SELECT ?sub ?label ?inDBpedia
+SELECT distinct ?sub ?label ?labelEN ?inDBpedia
 {
 # Part of the query that retrieves URIs and labels of concepts in LTB data
   
  ?sub a skos:Concept .
  ?sub rdfs:label ?label .
-  
+ 
+#Next, we add a language tag to the label. We need for matching.
+
+ Bind (STRLANG(str(?label), "en") as ?labelEN)
+ 
 # Service part of the query that is executed by a remote endpoint (dbpedia)
   
-  Service <http://dbpedia.org/sparql> {
-    
-# Part of the query that matches concepts from DBpedia 
-# (the first triple pattern: "?inDBpedia a skos:Concept ." ) 
-# based on the literal values of their labels 
-# (the second triple pattern: "?inDBpedia rdfs:label ?label .")
-    
+  Service <https://dbpedia.org/sparql> {
+#    
+## Part of the query that matches concepts from DBpedia 
+## (the first triple pattern: "?inDBpedia a skos:Concept ." ) 
+## based on the literal values of their labels 
+## (the second triple pattern: "?inDBpedia rdfs:label ?label .")
+#    
     ?inDBpedia a skos:Concept .
-    ?inDBpedia rdfs:label ?label .
-    
+    ?inDBpedia rdfs:label ?labelEN .    
+      
   }
 }
-# notice a limit
-LIMIT 1000
+LIMIT 100
 ```
 
 Copy the query and run it with YasGui. 
@@ -108,7 +111,7 @@ SELECT ?sub ?label ?dbcon
 {
  ?sub a skos:Concept .
   ?sub rdfs:label ?label .
-  Service <http://dbpedia.org/sparql> {
+  Service <https://dbpedia.org/sparql> {
 #   ?dbcon a skos:Concept .
     ?dbcon rdfs:label ?label .
   }
