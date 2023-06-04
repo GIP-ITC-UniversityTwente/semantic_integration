@@ -10,6 +10,14 @@ plugins:
   - jekyll-relative-links
   - jekyll-feed
 
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - README.md
+
+markdown: kramdown
+highlighter: rouge
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

@@ -36,7 +36,7 @@ Therefore, first of all, we need a table.
 Bellow is a simple **CSV** table that lists names of 2 persons together with their age and places of birth.
 In **CSV** this looks very simple:
 
-```csv
+``` csv
 Name,Age,Place of birth
 Neil,2,Enschede
 Leela,5,Utrecht

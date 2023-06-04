@@ -29,7 +29,7 @@ The SERVICE keyword is used to support queries that merge data distributed acros
 To put it short, federation makes it possible to query more than one endpoint at a time.
 For example, consider the query below. It retrieves first 10 triples from DBpedia:
 
-```SPARQL
+``` sparql
 SELECT ?s ?p ?o
   {
     SERVICE <https://dbpedia.org/sparql>
@@ -62,7 +62,7 @@ It tries to match labels of concepts from the LTB data and concepts from DBpedia
 The query is annotated using `#` which allows providing human-readable comments that are 
 invisible for the query processor. 
 
-```SPARQL
+``` sparql
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
@@ -103,7 +103,7 @@ Change the query below in such a way that it provides the greatest number of res
 most accurate semantic matching. In other words, you are asked to find such a combination of class declarations (can be more than one)
 in line 9 (the commented out line) that would yield the greatest number of semantically accurate results. 
  
-```SPARQL
+``` sparql
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 

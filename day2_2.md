@@ -73,7 +73,7 @@ may be a variable.
 
 In the default query a basic graph pattern is expressed as three variables  `?sub ?pred ?obj` .
 
-```sparql
+``` sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
@@ -108,7 +108,7 @@ A basic description always include information that answers two questions *"what
 For example, consider a statement: "*Berlin is a city*" . 
 RDF provides a formal way to describe this:
 
-```ntriples
+``` ntriples
 <http://dbpedia.org/resource/Berlin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/City> .
 ```
 
@@ -155,7 +155,7 @@ and an object is the class `<http://www.w3.org/2004/02/skos/core#Concept>`.
 
 Therefore the query will be:
 
-```sparql
+``` sparql
 SELECT ?sub 
 WHERE {
   ?sub <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept>.
@@ -168,7 +168,7 @@ Copy this query and run it in YasGUI.
 SPARQL allows shortenning queries to improve clarity and readability .  
 The same query can be written as follows:
 
-```sparql
+``` sparql
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
 SELECT ?sub 
@@ -193,7 +193,7 @@ We need to ad 1 additional triple pattern where the subject is the same as
 in the first triple pattern (same variable `?sub`); predicate is 
 `<http://www.w3.org/2000/01/rdf-schema#label>` and object is a new variable `?label`.  
 
-```sparql
+``` sparql
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
