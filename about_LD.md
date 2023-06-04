@@ -4,7 +4,7 @@ title:  "About Linked Data"
 subtitle: "Linked data principles"
 ---
 
-Linked Data is a method of publishing structured data so that it can be linked and queried.
+Linked Data (LD) is a method of publishing structured data so that it can be linked and queried.
 It is built on the Semantic Web technology, and is driven by open standards set by the World
 Wide Web Consortium (W3C). The term was  invented by [Sir Tim Berners-Lee](https://en.wikipedia.org/wiki/Tim_Berners-Lee) who also set [the four
 design rules](https://www.w3.org/DesignIssues/LinkedData.html) that are often used to define linked data. They are as follows:
