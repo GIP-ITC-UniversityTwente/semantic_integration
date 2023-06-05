@@ -108,7 +108,7 @@ A basic description always include information that answers two questions *"what
 For example, consider a statement: "*Berlin is a city*" . 
 RDF provides a formal way to describe this:
 
-``` ntriples
+``` turtle
 <http://dbpedia.org/resource/Berlin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/City> .
 ```
 
