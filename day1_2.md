@@ -149,7 +149,7 @@ Now you can repeat the same for Utrecht.
 
 ### Step 3: Load data into GraphDB and query it <a name="step3"></a>
 
-Load the data in your GraphDB and run this query to check if the data is in good shape:
+Load the data in your GraphDB [see instructions](https://graphdb.ontotext.com/documentation/10.2/getting-started.html#load-your-data) and run this query to check if the data is in good shape:
 
 ```` sparql
 prefix sdo: <https://schema.org/>
