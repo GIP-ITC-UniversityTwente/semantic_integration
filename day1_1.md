@@ -89,7 +89,7 @@ and *copy repository URL to clipboard*. See the figure:
 - **Step 8.**<a name="step8"></a>  Query your data from within browser-run apps. You can use different query interfaces to 
 query your data using the repository URL. 
 [YASGUI (Yet Another SPARQL GUI)](https://yasgui.triply.cc/) is an example of such an interface. 
-Therefore, lets try to query data in your local instance of GraphDB from the page your are reading. 
+Therefore, lets try to query data in your local instance of GraphDB from the page you are reading. 
 YasGui interface is deployed into this page. In the form below, 
 provide the address of the endpoint (`http://localhost:7200/repositories/test`) and click the run button. 
 

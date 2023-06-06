@@ -124,5 +124,8 @@ Add them to your LTB study area (create) and link them to matching concepts usin
 To denote that those concepts belong to DBpedia put `DBpedia:` before their names and 
 copy the concept URL into the "External resources" field in LTB.
 
-- Part B.  <a name="partB"></a> Add concepts that represent DBpedia classes used in the query. 
+- Part B.  <a name="partB"></a> Add DBpedia classes used in the query. 
 Link them to the 5 DBpedia concepts created in Part A using "is a kind of" relation. 
+
+The figure bellow presents the results of linking the concept Linked Data from LTB to Dbpedia
+<img src="ltb.png" alt="Example concept from LTB">

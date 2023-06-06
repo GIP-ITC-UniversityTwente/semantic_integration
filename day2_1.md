@@ -32,7 +32,7 @@ are [RDF/XML](https://www.w3.org/TR/rdf-syntax-grammar/), [Turtle](https://www.w
 - **Step 2.**  <a name="step2"></a> Change file extension. The downloaded file has **.json** extension. Before it can be loaded into GraphDB, the extension
  needs to be changed to **.jsonld** . Rename the file, so it is **.jsonld** .
  
-- **Step 3.** <a name="step3"></a>  Create a new repository. Create a new repository with repository ID *ltb*. [See instructions on how to...](http://graphdb.ontotext.com/documentation/8.9/free/quick-start-guide.html#create-a-repository).
+- **Step 3.** <a name="step3"></a>  Create a new repository. Create a new repository with repository ID *ltb*. [See instructions on how to...](https://graphdb.ontotext.com/documentation/10.2/getting-started.html#create-a-repository).
 
 - **Step 4.**  <a name="step4"></a> Upload the data into the repository. Make sure that *"ltb"* is your active repository. Then click ***Import*** -> ***RDF***. 
 Chose ***Upload rdf Files***  and provide the path to the your JSON-LD file that has extension **.jsonld**

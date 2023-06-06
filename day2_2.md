@@ -189,7 +189,7 @@ Therefore, let's ask about the labels of those concepts we found before.
 There is a dedicated RDF relation that helps to link subjects to literal values representing
 names of things `<http://www.w3.org/2000/01/rdf-schema#label>` .
 
-We need to ad 1 additional triple pattern where the subject is the same as 
+We need to add 1 additional triple pattern where the subject is the same as 
 in the first triple pattern (same variable `?sub`); predicate is 
 `<http://www.w3.org/2000/01/rdf-schema#label>` and object is a new variable `?label`.  
 
