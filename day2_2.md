@@ -19,7 +19,7 @@ subtitle: "an RDF Query Language"
 
 ## Query interface <a name="yasgui"></a>
 
-For this tutorial we will use the [YasGUI: Yet Another SPARQL Graphical User Interface](http://yasgui.org/). 
+For this tutorial we will use the [YasGUI: Yet Another SPARQL Graphical User Interface](https://yasgui.triply.cc/). 
 It has quite common appearance for such interfaces. 
 From the figure below you can see that it consists of four main elements as follows:
 1. endpoint selector
