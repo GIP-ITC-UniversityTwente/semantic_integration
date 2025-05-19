@@ -66,12 +66,12 @@ data can be transformed into LInked Data in three steps:
 3. linking the results to other RDF resources.
 
 Many software solutions exist that provide functionality for these three tasks (e.g., [Openrefine](https://openrefine.org/)). 
-In this tutorial, we will use the [GeoData Wizard](https://labs.kadaster.nl/demonstrators/geodatawizard/#1).
+In this tutorial, we will use the [GeoData Wizard](https://labs.kadaster.nl/innovatie/geodatawizard/demonstrator/).
 It has user interafce which is friendly to LD novices and it allows the user to perform all three tasks. 
 
 #### Step 1.1 Upload data into the GeoData Wizard <a name="step1.1"></a>
 
-Load your data into the [tool](https://labs.kadaster.nl/demonstrators/geodatawizard/#1). 
+Load your data into the [tool](https://labs.kadaster.nl/innovatie/geodatawizard/demonstrator/). 
 
 #### Step 1.2: Data mapping  <a name="step3"></a> 
 
