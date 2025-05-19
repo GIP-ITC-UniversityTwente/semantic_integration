@@ -54,7 +54,7 @@ And this is a rendered version:
 | Neil | 2017       | Enschede                  |
 | Leela | 2014       | Utrecht                   |
 
-This data will be converted into RDF using [GeoDataWizard](https://labs.kadaster.nl/demonstrators/geodatawizard/#1) in the next step.
+This data will be converted into RDF using [GeoDataWizard](https://labs.kadaster.nl/innovatie/geodatawizard/demonstrator/) in the next step.
  
 ### Step 1: From table to graph in one spell <a name="step1"></a>
 
